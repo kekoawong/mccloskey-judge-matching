@@ -33,6 +33,10 @@ judges, companies, categories = result
 # match judges
 judge_list, company_list = match_judges(judges, companies, categories)
 
+# sort lists
+judge_list = sorted(judge_list, key=lambda x: x[1])
+company_list = sorted(company_list, key=lambda x: x[1])
+
 # define file names
 judges_file_name="csv/output_judges.csv"
 judges_reasoning_file_name="csv/output_judges_reasoning.csv"

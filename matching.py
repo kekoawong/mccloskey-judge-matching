@@ -72,13 +72,13 @@ def match_judges(judges={}, companies={}, categories={}, min_company_judges=8, m
             # if not, add a new judge
             else:
                 judge_name = f"new-judge-{new_judges}"
+                # add judge to overall judges
+                judges[judge_name] = [next_category]
+                
                 # add new judge to the category list
                 available_category_judges[next_category].append(judge_name)
                 company_judges.append(judge_name)
                 company_judges_with_reasoning.append(f'{judge_name} - {next_category}. All interests are {", ".join(judges[judge_name])}')
-
-                # add judge to overall judges
-                judges[judge_name] = [next_category]
 
             # add company to judge list
             if judge_name not in judge_companies:
