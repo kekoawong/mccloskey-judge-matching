@@ -51,9 +51,11 @@ def match_judges(judges={}, companies={}, categories={}, min_company_judges=8, m
         # add judges to company
         company_judges = []
         for n in range(min_company_judges):
+            judge_name = None
             # if within range of category judges, add existing judge
             if n < len(available_category_judges[next_category]):
-                company_judges.append(available_category_judges[next_category][n])
+                judge_name = available_category_judges[next_category][n]
+                company_judges.append(judge_name)
 
             # if not, add a new judge
             else:
@@ -63,9 +65,18 @@ def match_judges(judges={}, companies={}, categories={}, min_company_judges=8, m
                 company_judges.append(judge_name)
 
                 # add judge to overall judges
-                # judges[judge_name] = 
+                judges[judge_name] = [next_category]
+
+            # add company to judge list
+            if judge_name not in judge_companies:
+                judge_companies[judge_name] = []
+            judge_companies[judge_name].append(next_company)
 
             # if judge has met max number, remove them from all category availibilty
+            if max_judge_companies <= len(judge_companies[judge_name]):
+                for cat in judges[judge_name]:
+                    if judge_name in available_category_judges[cat]:
+                        available_category_judges[cat].remove(judge_name)
 
         # decrement remaining companies
         remaining_companies -= 1
