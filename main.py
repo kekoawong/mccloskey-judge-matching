@@ -1,5 +1,6 @@
 import sys
 from parse import parse_data
+from matching import match_judges
 
 # Check if the correct number of command line arguments is provided
 if len(sys.argv) != 5:
@@ -27,6 +28,9 @@ if not (judges_file and companies_file):
 # parse the data from the csv
 result = parse_data(judges_file=judges_file, companies_file=companies_file)
 judges, companies, categories = result
+
+# match judges
+match_judges(judges, companies, categories)
 
 # output data
 # print(judges)

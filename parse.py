@@ -60,9 +60,6 @@ def parse_data(judges_file: str, companies_file: str) -> Tuple[Dict[Union[str, D
                 categories[company_category]["num_companies"] += 1 
 
         # return data structures
-        # print(judges)
-        # print(companies)
-        print(categories)
         return judges, companies, categories
 
     # create exceptions 

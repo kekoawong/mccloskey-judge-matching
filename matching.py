@@ -3,7 +3,7 @@ def get_next_category(categories={}):
     Function will get the next category depending on the highest ratio of companies to available judges
     '''
     ratios = {}
-    for cat, val in categories:
+    for cat, val in categories.items():
         if val["num_judges"] == 0:
             ratios[cat] = 0
         else:
@@ -25,14 +25,14 @@ def match_judges(judges={}, companies={}, categories={}, min_company_judges=8, m
 
     # loop through the companies, make a list of companies in categories
     company_categories = {}
-    for name, cat in companies:
+    for name, cat in companies.items():
         if cat not in company_categories:
             company_categories[cat] = []
         company_categories[cat].append(name)
 
     # add judges to new data structure
     available_category_judges = {}
-    for judge_name, cat_list in judges:
+    for judge_name, cat_list in judges.items():
         for cat in cat_list:
             if cat not in available_category_judges:
                 available_category_judges[cat] = []
@@ -53,7 +53,7 @@ def match_judges(judges={}, companies={}, categories={}, min_company_judges=8, m
         for n in range(min_company_judges):
             # if within range of category judges, add existing judge
             if n < len(available_category_judges[next_category]):
-                company_judges.append(available_category_judges[n])
+                company_judges.append(available_category_judges[next_category][n])
 
             # if not, add a new judge
             else:
