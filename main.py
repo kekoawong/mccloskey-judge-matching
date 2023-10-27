@@ -30,11 +30,13 @@ result = parse_data(judges_file=judges_file, companies_file=companies_file)
 judges, companies, categories = result
 
 # match judges
-match_judges(judges, companies, categories)
+judge_list, company_list = match_judges(judges, companies, categories)
+for row in company_list:
+    print(row)
 
 # output data
 # print(judges)
 # print(companies)
-for c in categories.keys():
-    print(c)
+# for c in categories.keys():
+#     print(c)
 

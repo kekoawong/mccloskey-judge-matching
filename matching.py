@@ -77,8 +77,13 @@ def match_judges(judges={}, companies={}, categories={}, min_company_judges=8, m
                 for cat in judges[judge_name]:
                     if judge_name in available_category_judges[cat]:
                         available_category_judges[cat].remove(judge_name)
+                    
+                    # decrement judges in that category
+                    categories[cat]["num_judges"] -= 1
+
+        company_list.append([next_company, next_category, company_judges, len(companies.keys()) - remaining_companies + 1])
 
         # decrement remaining companies
         remaining_companies -= 1
-
-    return
+    print(company_list)
+    return [[name, judges[name], judge_companies[name]] for name in judge_companies], company_list
