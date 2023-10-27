@@ -50,7 +50,7 @@ def match_judges(judges={}, companies={}, categories={}, min_company_judges=8, m
 
         # set queue variables
         queue_num = len(companies.keys()) - remaining_companies
-        queue_str = f'{queue_num} since {len(categories[next_category]["num_companies"])} {next_category} companies and {len(categories[next_category]["num_judges"])} available judges'
+        queue_str = f'{queue_num} since {categories[next_category]["num_companies"]} {next_category} companies and {categories[next_category]["num_judges"]} available judges'
         
         # decrement companies in that category
         categories[next_category]["num_companies"] -= 1
