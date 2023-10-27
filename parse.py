@@ -1,4 +1,13 @@
-def parse_data(judges_file, companies_file):
+from typing import Tuple, List, Dict, Union
+import csv
+
+def parse_data(judges_file: str, companies_file: str) -> Tuple[Dict[Union[str, Dict[str, List[str]]], Union[str, Dict[str, Union[int, int]]]]]:
+    '''
+    Function will return the following data structures in this order \n
+    judges = { judge_name: [judge_categories] } \n
+    companies = { company_name: company_category } \n
+    categories = { category: { companies: number; judges: number; } }
+    '''
     # define the dictionaries 
     judges = {} # will be of struture { judge_name: [judge_categories] }
     companies = {} # will be of struture { company_name: company_category }
@@ -53,6 +62,9 @@ def parse_data(judges_file, companies_file):
                 if company_category not in categories:
                     categories[category] = { "num_companies": 0, "num_judges": 0 }
                 categories[category]["num_companies"] += 1 
+
+        # return data structures
+        return judges, companies, categories
 
     # create exceptions 
     except FileNotFoundError as e:
