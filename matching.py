@@ -1,3 +1,5 @@
+import random
+
 def get_next_category(categories={}):
     '''
     Function will get the next category depending on the highest ratio of companies to available judges
@@ -48,6 +50,9 @@ def match_judges(judges={}, companies={}, categories={}, min_company_judges=8, m
         # decrement companies in that category
         categories[next_category]["num_companies"] -= 1
 
+        # shuffle the list order for judges
+        random.shuffle(available_category_judges[next_category])
+
         # add judges to company
         company_judges = []
         for n in range(min_company_judges):
@@ -55,14 +60,14 @@ def match_judges(judges={}, companies={}, categories={}, min_company_judges=8, m
             # if within range of category judges, add existing judge
             if n < len(available_category_judges[next_category]):
                 judge_name = available_category_judges[next_category][n]
-                company_judges.append(judge_name)
+                company_judges.append(f'{judge_name} - {next_category}. All interests are {", ".join(judges[judge_name])}')
 
             # if not, add a new judge
             else:
                 judge_name = f"new-judge-{new_judges}"
                 # add new judge to the category list
                 available_category_judges[next_category].append(judge_name)
-                company_judges.append(judge_name)
+                company_judges.append(f'{judge_name} - {next_category}. All interests are {", ".join(judges[judge_name])}')
 
                 # add judge to overall judges
                 judges[judge_name] = [next_category]
@@ -70,7 +75,7 @@ def match_judges(judges={}, companies={}, categories={}, min_company_judges=8, m
             # add company to judge list
             if judge_name not in judge_companies:
                 judge_companies[judge_name] = []
-            judge_companies[judge_name].append(next_company)
+            judge_companies[judge_name].append(f'{next_company} - {next_category}')
 
             # if judge has met max number, remove them from all category availibilty
             if max_judge_companies <= len(judge_companies[judge_name]):

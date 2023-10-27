@@ -10,7 +10,7 @@ def write_judges_to_csv(data, header, filename):
             name = row[0]
             categories = row[1]
             companies = row[2]
-            written_row = [name, categories]
+            written_row = [name, ", ".join(categories)]
             written_row.extend(companies)
             csv_writer.writerow(written_row)
 
