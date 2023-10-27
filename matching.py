@@ -85,5 +85,4 @@ def match_judges(judges={}, companies={}, categories={}, min_company_judges=8, m
 
         # decrement remaining companies
         remaining_companies -= 1
-    print(company_list)
     return [[name, judges[name], judge_companies[name]] for name in judge_companies], company_list
