@@ -48,8 +48,6 @@ def parse_data(judges_file: str, companies_file: str) -> Tuple[Dict[Union[str, D
                 # get the judge name
                 company_name = row[1]
 
-                # add to companies dictionar
-
                 # get the categories
                 company_category = row[3].strip()
 
