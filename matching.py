@@ -18,10 +18,11 @@ def match_judges(judges={}, companies={}, categories={}, min_company_judges=8, m
     '''
     Function will take in the judges, companies, and categories \n
     Will output the following list of lists. \n
-    Judge List: [judge_name, [categories], [companies]] \n
-    Company List: [company_name, category, queue_number, [judges]]
+    Judge List: [judge_name, [categories], [companies], [companies-with-reasoning]] \n
+    Company List: [company_name, category, queue_number, queue_number_with_reasoning [judges], [judges-with-reasoning]]
     '''
     judge_companies = {}
+    judge_companies_with_reasoning = {}
     company_list = []
     new_judges = 0
 
@@ -46,6 +47,10 @@ def match_judges(judges={}, companies={}, categories={}, min_company_judges=8, m
         # get next company
         next_category = get_next_category(categories=categories)
         next_company = company_categories[next_category].pop(0)
+
+        # set queue variables
+        queue_num = len(companies.keys()) - remaining_companies
+        queue_str = f'{queue_num} since {len(categories[next_category]["num_companies"])} {next_category} companies and {len(categories[next_category]["num_judges"])} available judges'
         
         # decrement companies in that category
         categories[next_category]["num_companies"] -= 1
@@ -55,19 +60,22 @@ def match_judges(judges={}, companies={}, categories={}, min_company_judges=8, m
 
         # add judges to company
         company_judges = []
+        company_judges_with_reasoning = []
         for n in range(min_company_judges):
             judge_name = None
             # if within range of category judges, add existing judge
             if n < len(available_category_judges[next_category]):
                 judge_name = available_category_judges[next_category][n]
-                company_judges.append(f'{judge_name} - {next_category}. All interests are {", ".join(judges[judge_name])}')
+                company_judges.append(judge_name)
+                company_judges_with_reasoning.append(f'{judge_name} - {next_category}. All interests are {", ".join(judges[judge_name])}')
 
             # if not, add a new judge
             else:
                 judge_name = f"new-judge-{new_judges}"
                 # add new judge to the category list
                 available_category_judges[next_category].append(judge_name)
-                company_judges.append(f'{judge_name} - {next_category}. All interests are {", ".join(judges[judge_name])}')
+                company_judges.append(judge_name)
+                company_judges_with_reasoning.append(f'{judge_name} - {next_category}. All interests are {", ".join(judges[judge_name])}')
 
                 # add judge to overall judges
                 judges[judge_name] = [next_category]
@@ -75,7 +83,11 @@ def match_judges(judges={}, companies={}, categories={}, min_company_judges=8, m
             # add company to judge list
             if judge_name not in judge_companies:
                 judge_companies[judge_name] = []
-            judge_companies[judge_name].append(f'{next_company} - {next_category}')
+            judge_companies[judge_name].append(next_company)
+
+            if judge_name not in judge_companies_with_reasoning:
+                judge_companies_with_reasoning[judge_name] = []
+            judge_companies_with_reasoning[judge_name].append(f'{next_company} - {next_category}')
 
             # if judge has met max number, remove them from all category availibilty
             if max_judge_companies <= len(judge_companies[judge_name]):
@@ -85,9 +97,9 @@ def match_judges(judges={}, companies={}, categories={}, min_company_judges=8, m
                     
                     # decrement judges in that category
                     categories[cat]["num_judges"] -= 1
-
-        company_list.append([next_company, next_category, len(companies.keys()) - remaining_companies + 1, company_judges])
+    
+        company_list.append([next_company, next_category, queue_num, queue_str, company_judges, company_judges_with_reasoning])
 
         # decrement remaining companies
         remaining_companies -= 1
-    return [[name, judges[name], judge_companies[name]] for name in judge_companies], company_list
+    return [[name, judges[name], judge_companies[name], judge_companies_with_reasoning[name]] for name in judge_companies], company_list
