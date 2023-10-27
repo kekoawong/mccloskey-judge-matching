@@ -77,9 +77,10 @@ try:
                 categories[category] = { "num_companies": 0, "num_judges": 0 }
             categories[category]["num_companies"] += 1  
 
-    print(judges)
-    print(companies)
-    print(categories)
+    # print(judges)
+    # print(companies)
+    for c in categories.keys():
+        print(c)
 except FileNotFoundError as e:
     print(f"File was not found error: {e}")
 except Exception as e:
