@@ -9,6 +9,8 @@ if len(sys.argv) != 5:
 # Get the CSV file paths from the command line arguments
 judges_file = None
 companies_file = None
+min_company_judges = 8
+max_judge_companies = 10
 
 # Parse command line arguments
 for i in range(1, len(sys.argv), 2):
