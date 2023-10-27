@@ -68,11 +68,10 @@ try:
             # add to judge dictionary
             companies[company_name] = company_category
 
-            # increment num companies in category
-            for category in judge_categories:
-                if category not in categories:
-                    categories[category] = { "num_companies": 0, "num_judges": 0 }
-                categories[category]["num_companies"] += 1
+            # add company to category
+            if company_category not in categories:
+                categories[category] = { "num_companies": 0, "num_judges": 0 }
+            categories[category]["num_companies"] += 1         
             
 except FileNotFoundError as e:
     print(f"File was not found error: {e}")
