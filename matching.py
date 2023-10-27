@@ -17,7 +17,7 @@ def match_judges(judges={}, companies={}, categories={}, min_company_judges=8, m
     Function will take in the judges, companies, and categories \n
     Will output the following list of lists. \n
     Judge List: [judge_name, [categories], [companies]] \n
-    Company List: [company_name, category, [judges], queue_number]
+    Company List: [company_name, category, queue_number, [judges]]
     '''
     judge_companies = {}
     company_list = []
@@ -59,7 +59,7 @@ def match_judges(judges={}, companies={}, categories={}, min_company_judges=8, m
 
             # if not, add a new judge
             else:
-                judge_name = f"new-judge-${new_judges}"
+                judge_name = f"new-judge-{new_judges}"
                 # add new judge to the category list
                 available_category_judges[next_category].append(judge_name)
                 company_judges.append(judge_name)
@@ -81,7 +81,7 @@ def match_judges(judges={}, companies={}, categories={}, min_company_judges=8, m
                     # decrement judges in that category
                     categories[cat]["num_judges"] -= 1
 
-        company_list.append([next_company, next_category, company_judges, len(companies.keys()) - remaining_companies + 1])
+        company_list.append([next_company, next_category, len(companies.keys()) - remaining_companies + 1, company_judges])
 
         # decrement remaining companies
         remaining_companies -= 1
