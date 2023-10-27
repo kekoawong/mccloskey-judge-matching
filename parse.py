@@ -21,13 +21,12 @@ def parse_data(judges_file: str, companies_file: str) -> Tuple[Dict[Union[str, D
             # skip header row
             next(judges_csv_reader, None)
             
-            print("Judges CSV Contents:")
             for row in judges_csv_reader:
                 # get the judge name
                 judge_name = row[0]
 
                 # get the categories
-                judge_categories = [category.strip() for category in row[2].split(',')]
+                judge_categories = [category.strip() for category in row[1].split(',')]
 
                 # add to judge dictionary
                 judges[judge_name] = judge_categories
@@ -45,15 +44,14 @@ def parse_data(judges_file: str, companies_file: str) -> Tuple[Dict[Union[str, D
             # skip header row
             next(companies_csv_reader, None)
             
-            print("\nCompanies CSV Contents:")
             for row in companies_csv_reader:
                 # get the judge name
-                company_name = row[0]
+                company_name = row[1]
 
                 # add to companies dictionar
 
                 # get the categories
-                company_category = row[1].strip()
+                company_category = row[3].strip()
 
                 # add to judge dictionary
                 companies[company_name] = company_category
@@ -61,9 +59,12 @@ def parse_data(judges_file: str, companies_file: str) -> Tuple[Dict[Union[str, D
                 # add company to category
                 if company_category not in categories:
                     categories[category] = { "num_companies": 0, "num_judges": 0 }
-                categories[category]["num_companies"] += 1 
+                categories[company_category]["num_companies"] += 1 
 
         # return data structures
+        # print(judges)
+        # print(companies)
+        print(categories)
         return judges, companies, categories
 
     # create exceptions 

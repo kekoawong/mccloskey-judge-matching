@@ -1,11 +1,15 @@
 from typing import Tuple, List, Dict, Union
 
 def get_next_category(categories={}):
+    '''
+    Function will get the next category depending on the highest ratio of companies to available judges
+    '''
     ratios = {}
     for cat, val in categories:
         if val["num_judges"] == 0:
-            return None
-        ratios[cat] = val["num_companies"] / val["num_judges"]
+            ratios[cat] = 0
+        else:
+            ratios[cat] = val["num_companies"] / val["num_judges"]
 
     max_ratio_key = max(ratios, key=lambda k: ratios[k])
     return max_ratio_key
@@ -28,6 +32,6 @@ def match_judges(judges={}, companies={}, categories={}, min_company_judges=8, m
         company_categories[cat].append(name)
     
     # loop through and add the judges to the company
-    initial_category = 
+    # initial_category = 
 
     return
