@@ -1,7 +1,7 @@
 import sys
 from parse import parse_data
 from matching import match_judges
-from write import write_to_csv
+from write import write_judges_to_csv, write_companies_to_csv
 
 # Check if the correct number of command line arguments is provided
 if len(sys.argv) != 5:
@@ -40,10 +40,10 @@ companies_file_name="csv/output_companies.csv"
 # write to files
 header1 = ["Judge Name", "Categories"]
 header1.extend([f'Company {n+1}' for n in range(max_judge_companies + 2)])
-write_to_csv(judge_list, header1, judges_file_name)
+write_judges_to_csv(judge_list, header1, judges_file_name)
 header2 = ["Company", "Category", "Queue Number"]
 header2.extend([f'Judge {n+1}' for n in range(min_company_judges + 2)])
-write_to_csv(judge_list, header2, companies_file_name)
+write_companies_to_csv(company_list, header2, companies_file_name)
 
 # for row in company_list:
 #     print(row)
