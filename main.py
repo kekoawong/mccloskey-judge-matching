@@ -32,6 +32,8 @@ try:
     with open(judges_file, 'r') as judges_csv_file:
         # Create a CSV reader object for judges
         judges_csv_reader = csv.reader(judges_csv_file)
+        # skip header row
+        next(judges_csv_reader, None)
         
         print("Judges CSV Contents:")
         for row in judges_csv_reader:
@@ -54,6 +56,8 @@ try:
     with open(companies_file, 'r') as companies_csv_file:
         # Create a CSV reader object for companies
         companies_csv_reader = csv.reader(companies_csv_file)
+        # skip header row
+        next(companies_csv_reader, None)
         
         print("\nCompanies CSV Contents:")
         for row in companies_csv_reader:
@@ -71,8 +75,11 @@ try:
             # add company to category
             if company_category not in categories:
                 categories[category] = { "num_companies": 0, "num_judges": 0 }
-            categories[category]["num_companies"] += 1         
-            
+            categories[category]["num_companies"] += 1  
+
+    print(judges)
+    print(companies)
+    print(categories)
 except FileNotFoundError as e:
     print(f"File was not found error: {e}")
 except Exception as e:
