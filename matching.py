@@ -46,6 +46,8 @@ def match_judges(judges={}, companies={}, categories={}, min_company_judges=8, m
     while remaining_companies > 0:
         # get next company
         next_category = get_next_category(categories=categories)
+        # check this later on
+        # if (len(company_categories[next_category])):
         next_company = company_categories[next_category].pop(0)
 
         # set queue variables
