@@ -36,6 +36,9 @@ def match_judges(judges={}, companies={}, categories={}, max_judge_companies=10)
 
     # define adding a judge to a company
     def add_judge_to_company(judge, company, within_category=True):
+        '''
+        Function will add the judge to the company
+        '''
         # add company to judge database
         if judge not in return_judges:
             return_judges[judge] = { "companies": [], "companies_with_reasoning": [] }
@@ -49,8 +52,14 @@ def match_judges(judges={}, companies={}, categories={}, max_judge_companies=10)
         return_companies[company]["judges_with_reasoning"].append(f'{judge} - {next_category if within_category else " - Fill-in"}. All interests are {", ".join(judges[judge])}')
 
         # remove judge from being available if hits max number
+        if len(return_judges[judge]) >= max_judge_companies:
+            for category in judges[judge]:
+                # decrement judges in that category
+                categories[category]["num_judges"] -= 1
 
-        return
+            # delete judge from availibility
+            del judges[judge]
+
 
     # loop through the companies, make a list of companies in each categories
     company_categories = {}
@@ -66,13 +75,6 @@ def match_judges(judges={}, companies={}, categories={}, max_judge_companies=10)
         next_category = get_next_category(categories=categories)
         next_company = company_categories[next_category].pop(0)
 
-        # set queue variables
-        queue_num = len(companies.keys()) - remaining_companies
-        queue_str = f'{queue_num} since {categories[next_category]["num_companies"]} {next_category} companies and {categories[next_category]["num_judges"]} available judges'
-        
-        # decrement companies in that category
-        categories[next_category]["num_companies"] -= 1
-
         # assign variables for judge loop
         judges_shuffled = list(random.sample(judges.keys(), len(judges)))
         num_extra_judges_needed = min_judges - categories[next_category]["num_judges"]
@@ -81,12 +83,27 @@ def match_judges(judges={}, companies={}, categories={}, max_judge_companies=10)
         for judge in judges_shuffled:
             # if the judge is available and has the category, assign to company
             if judge in judges and next_category in judges[judge]:
-                pass
+                add_judge_to_company(judge, next_company, True)
             # if judge is available and company needs a random judge, assign to company
             elif judge in judges and num_extra_judges_needed > 0:
-                pass
+                add_judge_to_company(judge, next_company, False)
 
             # break from loop if num judges met
+            if len(return_companies[next_company]["judges"]) >= min_judges:
+                break
+
+        # add the values to the dictionary
+        queue_num = len(companies.keys()) - remaining_companies
+        return_companies[next_company]["queue_number"] = queue_num
+        return_companies[next_company]["queue_number_with_reasoning"] = f'{queue_num} since {categories[next_category]["num_companies"]} {next_category} companies and {categories[next_category]["num_judges"]} available judges'
+
+        # decrement companies in that category
+        categories[next_category]["num_companies"] -= 1
+
+    # return the data
+    return_judge_list = []
+    return_company_list = []
+    return return_judge_list, return_company_list
             
     
 
