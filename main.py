@@ -26,11 +26,11 @@ if not (judges_file and companies_file):
     sys.exit(1)
 
 # parse the data from the csv
-result = parse_data(judges_file=judges_file, companies_file=companies_file)
-judges, companies, categories = result
+judges, companies, categories = parse_data(judges_file=judges_file, companies_file=companies_file)
+# judges, companies = result
 
 # match judges
-judge_list, company_list = match_judges(judges, companies, categories, max_judge_companies=max_judge_companies)
+judge_list, company_list, min_company_judges = match_judges(judges, companies, max_judge_companies=max_judge_companies)
 
 # sort lists
 judge_list = sorted(judge_list, key=lambda x: x[1])

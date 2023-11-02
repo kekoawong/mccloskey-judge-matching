@@ -1,7 +1,7 @@
 from typing import Tuple, List, Dict, Union
 import csv
 
-def parse_data(judges_file: str, companies_file: str) -> Tuple[Dict[Union[str, Dict[str, List[str]]], Union[str, Dict[str, Union[int, int]]]]]:
+def parse_data(judges_file: str, companies_file: str):
     '''
     Function will return the following data structures in this order \n
     judges = { judge_name: [judge_categories] } \n
