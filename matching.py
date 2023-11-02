@@ -69,26 +69,21 @@ def match_judges(judges={}, companies={}, max_judge_companies=10):
         return_companies[company]["judges_with_reasoning"].append(f'{judge} - {next_category if within_category else " - Fill-in"}. All interests are {", ".join(judges[judge])}')
 
         # remove judge from being available if hits max number
-        if len(return_judges[judge]) >= max_judge_companies:
+        if len(return_judges[judge]["companies"]) >= max_judge_companies:
             for category in judges[judge]:
                 # remove judge from category
                 categories[category]["judges"].remove(judge)
 
             # delete judge from availibility
             del judges[judge]
+            # print(f"deleted judge {judge} with companies {return_judges[judge]["companies"]}")
 
     # loop through and add the judges to each company
     remaining_companies = len(companies.keys())
     while remaining_companies > 0:
         # get next category and company
         next_category = get_next_category(categories=categories)
-        # next_company = categories[next_category]["companies"].pop(0)
-
-        try:
-            next_company = categories[next_category]["companies"].pop(0)
-        except IndexError:
-            print(categories[next_category], next_category)
-            exit(10)
+        next_company = categories[next_category]["companies"].pop(0)
 
         # assign variables for judge loop
         judges_shuffled = list(random.sample(list(judges.keys()), len(judges)))
@@ -118,7 +113,7 @@ def match_judges(judges={}, companies={}, max_judge_companies=10):
     # return the data
     return_judge_list = [[judge_name, judge_value["categories"], judge_value["companies"], judge_value["companies_with_reasoning"]] for judge_name, judge_value in return_judges.items()]
     return_company_list = [[company_name, companies[company_name], company_value["queue_number"], company_value["queue_number_with_reasoning"], company_value["judges"], company_value["judges_with_reasoning"]] for company_name, company_value in return_companies.items()]
-    return return_judge_list, return_company_list, min_judges
+    return return_judge_list, return_company_list, int(min_judges)
             
     
 
