@@ -11,7 +11,6 @@ if len(sys.argv) != 5:
 # Get the CSV file paths from the command line arguments
 judges_file = None
 companies_file = None
-min_company_judges = 16
 max_judge_companies = 10
 
 # Parse command line arguments
@@ -31,7 +30,7 @@ result = parse_data(judges_file=judges_file, companies_file=companies_file)
 judges, companies, categories = result
 
 # match judges
-judge_list, company_list = match_judges(judges, companies, categories, min_company_judges=min_company_judges, max_judge_companies=max_judge_companies)
+judge_list, company_list = match_judges(judges, companies, categories, max_judge_companies=max_judge_companies)
 
 # sort lists
 judge_list = sorted(judge_list, key=lambda x: x[1])

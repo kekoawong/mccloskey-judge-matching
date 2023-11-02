@@ -6,16 +6,16 @@ def get_next_category(categories={}):
     '''
     ratios = {}
     for cat, val in categories.items():
-        if val["num_judges"] == 0:
+        if len(val["judges"]) == 0:
             ratios[cat] = 0
         else:
-            ratios[cat] = val["num_companies"] / val["num_judges"]
+            ratios[cat] = len(val["companies"]) / len(val["judges"])
 
     max_ratio_key = max(ratios, key=lambda k: ratios[k])
     return max_ratio_key
 
 
-def match_judges(judges={}, companies={}, categories={}, max_judge_companies=10):
+def match_judges(judges={}, companies={}, max_judge_companies=10):
     '''
     Function will take in the judges, companies, and categories \n
         judges = { judge_name: [judge_categories] } \n
@@ -29,6 +29,21 @@ def match_judges(judges={}, companies={}, categories={}, max_judge_companies=10)
     total_judges = len(judges.keys())
     total_companies = len(companies.keys())
     min_judges = (total_judges * max_judge_companies) / total_companies
+
+    # create categories object
+    # of the structure { category: { companies: [], judges: [] }}
+    categories = {}
+    # add companies
+    for company, category in companies.items():
+        if category not in categories:
+            categories[category] = { companies: [], judges: [] }
+        categories[category]["companies"].append(company)
+    # add judges
+    for judge, categories in judges.items():
+        for category in categories:
+            if category not in categories:
+                categories[category] = { companies: [], judges: [] }
+            categories[category]["judges"].append(judges)
 
     # return objects
     return_judges = {}
@@ -54,30 +69,30 @@ def match_judges(judges={}, companies={}, categories={}, max_judge_companies=10)
         # remove judge from being available if hits max number
         if len(return_judges[judge]) >= max_judge_companies:
             for category in judges[judge]:
-                # decrement judges in that category
-                categories[category]["num_judges"] -= 1
+                # remove judge from category
+                categories[category]["judges"].remove(judge)
 
             # delete judge from availibility
             del judges[judge]
 
 
     # loop through the companies, make a list of companies in each categories
-    company_categories = {}
-    for name, cat in companies.items():
-        if cat not in company_categories:
-            company_categories[cat] = []
-        company_categories[cat].append(name)
+    # company_categories = {}
+    # for name, cat in companies.items():
+    #     if cat not in company_categories:
+    #         company_categories[cat] = []
+    #     company_categories[cat].append(name)
 
     # loop through and add the judges to each company
     remaining_companies = len(companies.keys())
     while remaining_companies > 0:
         # get next category and company
         next_category = get_next_category(categories=categories)
-        next_company = company_categories[next_category].pop(0)
+        next_company = categories[next_category].pop(0)
 
         # assign variables for judge loop
-        judges_shuffled = list(random.sample(judges.keys(), len(judges)))
-        num_extra_judges_needed = min_judges - categories[next_category]["num_judges"]
+        judges_shuffled = list(random.sample(list(judges.keys()), len(judges)))
+        num_extra_judges_needed = min_judges - len(categories[next_category]["judges"])
 
         # loop through judges
         for judge in judges_shuffled:
@@ -89,16 +104,14 @@ def match_judges(judges={}, companies={}, categories={}, max_judge_companies=10)
                 add_judge_to_company(judge, next_company, False)
 
             # break from loop if num judges met
-            if len(return_companies[next_company]["judges"]) >= min_judges:
+            if next_company in return_companies and len(return_companies[next_company]["judges"]) >= min_judges:
                 break
 
         # add the values to the dictionary
         queue_num = len(companies.keys()) - remaining_companies
         return_companies[next_company]["queue_number"] = queue_num
-        return_companies[next_company]["queue_number_with_reasoning"] = f'{queue_num} since {categories[next_category]["num_companies"]} {next_category} companies and {categories[next_category]["num_judges"]} available judges'
+        return_companies[next_company]["queue_number_with_reasoning"] = f'{queue_num} since {len(categories[next_category]["companies"])} {next_category} companies and {len(categories[next_category]["judges"])} available judges'
 
-        # decrement companies in that category
-        categories[next_category]["num_companies"] -= 1
 
     # return the data
     return_judge_list = [[judge_name, judge_value["categories"], judge_value["companies"], judge_value["companies_with_reasoning"]] for judge_name, judge_value in return_judges.items()]
