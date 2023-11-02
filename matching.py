@@ -41,7 +41,7 @@ def match_judges(judges={}, companies={}, categories={}, max_judge_companies=10)
         '''
         # add company to judge database
         if judge not in return_judges:
-            return_judges[judge] = { "companies": [], "companies_with_reasoning": [] }
+            return_judges[judge] = { "companies": [], "companies_with_reasoning": [], "categories": judges[judge] }
         return_judges[judge]["companies"].append(f'{company if within_category else company + " - Fill-in"}')
         return_judges[judge]["companies_with_reasoning"].append(f'{company} - {next_category if within_category else " - Fill-in"}.')
         
@@ -101,8 +101,8 @@ def match_judges(judges={}, companies={}, categories={}, max_judge_companies=10)
         categories[next_category]["num_companies"] -= 1
 
     # return the data
-    return_judge_list = []
-    return_company_list = []
+    return_judge_list = [[judge_name, judge_value["categories"], judge_value["companies"], judge_value["companies_with_reasoning"]] for judge_name, judge_value in return_judges.items()]
+    return_company_list = [[company_name, companies[company_name], company_value["queue_number"], company_value["queue_number_with_reasoning"], company_value["judges"], company_value["judges_with_reasoning"]] for company_name, company_value in return_companies.items()]
     return return_judge_list, return_company_list
             
     
@@ -111,7 +111,7 @@ def match_judges_old(judges={}, companies={}, categories={}, max_judge_companies
     '''
     Function will take in the judges, companies, and categories \n
     Will output the following list of lists. \n
-    Judge List: [judge_name, [categories], [companies], [companies-with-reasoning]] \n
+    Judge List: [judge_name, [categories], [companies], [companies_with_reasoning]] \n
     Company List: [company_name, category, queue_number, queue_number_with_reasoning [judges], [judges-with-reasoning]]
     '''
     judge_companies = {}
