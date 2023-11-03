@@ -90,6 +90,10 @@ def match_judges(judges={}, companies={}, max_judge_companies=10):
             del judges[judge]
             # print(f"deleted judge {judge} with companies {return_judges[judge]["companies"]}")
 
+    # loop through each judge iteration
+    for n in range(min_judges):
+        break
+
     # loop through and add the judges to each company
     remaining_companies = len(companies.keys())
     while remaining_companies > 0:
