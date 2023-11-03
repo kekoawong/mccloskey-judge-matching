@@ -92,7 +92,7 @@ def match_judges(judges={}, companies={}, max_judge_companies=10):
             if comp_category not in categories:
                 categories[comp_category] = { "companies": [], "judges": [] }
             categories[comp_category]["companies"].append(company_name)
-        print([f"{x}: {len(v['companies'])} companies and {len(v['judges'])} judges" for x, v in categories.items()])
+        # print([f"{x}: {len(v['companies'])} companies and {len(v['judges'])} judges" for x, v in categories.items()])
         # loop through and add a judge to each company
         remaining_companies = len(companies.keys())
         while remaining_companies > 0:
@@ -157,6 +157,7 @@ def match_judges(judges={}, companies={}, max_judge_companies=10):
         key=lambda j: len(judges[j])
     )
     # assign the judges just by if htey are not in there
+    unmatched_spots = 0
     for underused_judge in filtered_and_sorted_judges:
         # filter and sort the companies
         min_length = min(values["num_judges"] for values in return_companies.values())
@@ -168,6 +169,7 @@ def match_judges(judges={}, companies={}, max_judge_companies=10):
         for comp in filtered_and_sorted_companies:
             if underused_judge not in return_companies[comp]["judges"]:
                 add_judge_to_company(underused_judge, comp, False)
+                unmatched_spots += 1
             # break if the judge has more than the necessary amount of companies
             if underused_judge in return_judges and return_judges[underused_judge]["num_companies"] >= max_judge_companies:
                 break
@@ -175,5 +177,5 @@ def match_judges(judges={}, companies={}, max_judge_companies=10):
     # return the data
     return_judge_list = [[judge_name, judge_value["categories"], judge_value["num_companies"], judge_value["num_matching_companies"], judge_value["num_fill_in_companies"], judge_value["companies"], judge_value["companies_with_reasoning"]] for judge_name, judge_value in return_judges.items()]
     return_company_list = [[company_name, companies[company_name], company_value["queue_number"], company_value["num_judges"], company_value["num_matching_judges"], company_value["num_fill_in_judges"], company_value["queue_number_with_reasoning"], company_value["judges"], company_value["judges_with_reasoning"]] for company_name, company_value in return_companies.items()]
-    return return_judge_list, return_company_list, int(min_judges)
+    return return_judge_list, return_company_list, int(min_judges), 1 - (unmatched_spots/(total_judges * max_judge_companies))
             
