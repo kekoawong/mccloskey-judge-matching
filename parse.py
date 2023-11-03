@@ -1,4 +1,3 @@
-from typing import Tuple, List, Dict, Union
 import csv
 
 def parse_data(judges_file: str, companies_file: str):
@@ -17,16 +16,16 @@ def parse_data(judges_file: str, companies_file: str):
         # Open judges CSV file in read mode
         with open(judges_file, 'r') as judges_csv_file:
             # Create a CSV reader object for judges
-            judges_csv_reader = csv.reader(judges_csv_file)
-            # skip header row
-            next(judges_csv_reader, None)
+            judges_csv_reader = csv.DictReader(judges_csv_file)
+            # # skip header row
+            # next(judges_csv_reader, None)
             
             for row in judges_csv_reader:
                 # get the judge name
-                judge_name = row[0]
+                judge_name = row.get("Judge")
 
                 # get the categories
-                judge_categories = [category.strip() for category in row[1].split(',')]
+                judge_categories = [category.strip() for category in row.get("Categories").split(',')]
 
                 # add to judge dictionary
                 judges[judge_name] = judge_categories
@@ -40,16 +39,16 @@ def parse_data(judges_file: str, companies_file: str):
         # Open companies CSV file in read mode
         with open(companies_file, 'r') as companies_csv_file:
             # Create a CSV reader object for companies
-            companies_csv_reader = csv.reader(companies_csv_file)
-            # skip header row
-            next(companies_csv_reader, None)
+            companies_csv_reader = csv.DictReader(companies_csv_file)
+            # # skip header row
+            # next(companies_csv_reader, None)
             
             for row in companies_csv_reader:
                 # get the judge name
-                company_name = row[1]
+                company_name = row.get("Company")
 
                 # get the categories
-                company_category = row[3].strip()
+                company_category = row.get("Category").strip()
 
                 # add to judge dictionary
                 companies[company_name] = company_category

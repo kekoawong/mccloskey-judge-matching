@@ -1,4 +1,4 @@
-Judge,Categories (sorted by commas),Project 1,Project 2,Project 3,Project 4,Project 5,Project 6,Project 7,Project 8,Project 9,Project 10
+Judge,Categories,Project 1,Project 2,Project 3,Project 4,Project 5,Project 6,Project 7,Project 8,Project 9,Project 10
 Aaron Cleavinger,"Commerce/Retail, Manufacturing/Supply Chain, B2C Physical Products",,,,,,,,,,
 Aaron Wallace,"B2C Digital/Apps, Manufacturing/Supply Chain, Energy/Defense/Environmental",,,,,,,,,,
 Adam Sellke,"Commerce/Retail, Manufacturing/Supply Chain, B2C Digital/Apps, B2B Digital/SaaS, B2C Physical Products, Energy/Defense/Environmental",,,,,,,,,,
@@ -72,7 +72,12 @@ Larry Arseniadis,"Commerce/Retail, Manufacturing/Supply Chain, B2C Physical Prod
 Larry Augustin,"B2B Digital/SaaS, Manufacturing/Supply Chain",,,,,,,,,,
 Larry Mastrovich,Medical Device/Diagnostics,,,,,,,,,,
 Logan Herzog,"B2B Digital/SaaS, B2C Digital/Apps",,,,,,,,,,
-Malaina Weldy,"Advanced Materials, Commerce/Retail, B2C Physical Products, B2C Digital/Apps, B2B Digital/SaaS, Manufacturing/Supply Chain",,,,,,,,,,
+Malaina Weldy,"Advanced Materials
+, Commerce/Retail
+, B2C Physical Products
+, B2C Digital/Apps
+, B2B Digital/SaaS
+, Manufacturing/Supply Chain",,,,,,,,,,
 Manish Shah,"B2B Digital/SaaS, B2C Digital/Apps",,,,,,,,,,
 Maria Bailey,"Manufacturing/Supply Chain, Commerce/Retail",,,,,,,,,,
 Mark Dixon,"B2C Physical Products, B2C Digital/Apps, B2B Digital/SaaS, Manufacturing/Supply Chain",,,,,,,,,,
