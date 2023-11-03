@@ -104,21 +104,12 @@ def match_judges(judges={}, companies={}, max_judge_companies=10):
                 print("Error")
                 print(categories[target_category])
                 print([(cc, categories[cc]["companies"]) for cc in categories.keys()])
-                # exit()
+                pass
 
             # add the values to the dictionary
             queue_num = len(companies.keys()) - remaining_companies
             queue_num_with_reasoning = f'{queue_num} since {len(categories[target_category]["companies"]) + 1} {target_category} companies and {len(categories[target_category]["judges"])} available judges'
 
-            # assign variables for judge loop
-            judges_shuffled = list(random.sample(list(judges.items()), len(judges.keys())))
-            num_extra_judges_needed = min_judges - len(categories[target_category]["judges"])
-
-            # match the judge that has the lowest number of categories and contains the category
-            # print(judges_shuffled)
-            # exit()
-            # judge_name = next((judge_n for judge_n, judge_c in judges_shuffled if target_category in judge_c), None)
-            # print(remaining_companies)
             # get remaining avalailable judges in company
             available_category_judges = [judge_n for judge_n, judge_categories in judges.items() if target_category in judge_categories]
             sorted_available_judges = sorted(available_category_judges, key=lambda x: (len(judges[x]), random.random()))
@@ -129,20 +120,6 @@ def match_judges(judges={}, companies={}, max_judge_companies=10):
             # judge_name = min((name for name, categories in judges.items() if target_category in categories), key=lambda name: len(judges[name])) if any(target_category in categories for categories in judges.values()) else None
             if judge_name:
                 add_judge_to_company(judge_name, target_company, True)
-
-            # loop through judges
-            # for judge in judges_shuffled:
-            #     # if the judge is available and has the category, assign to company
-            #     if judge in judges and target_category in judges[judge]:
-            #         add_judge_to_company(judge, target_company, True)
-            #     # if judge is available and company needs a random judge, assign to company
-            #     # elif judge in judges and num_extra_judges_needed > 0:
-            #     #     add_judge_to_company(judge, target_company, False)
-            #     #     num_extra_judges_needed -= 1
-
-            #     # break from loop if num judges met
-            #     if target_company in return_companies and len(return_companies[target_company]["judges"]) >= min_judges:
-            #         break
 
             # set values in dictionary
             return_companies[target_company]["queue_number"] = queue_num
