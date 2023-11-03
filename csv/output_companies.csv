@@ -1,136 +1,136 @@
-Company,Category,Queue Number,Judge 1,Judge 2,Judge 3,Judge 4,Judge 5,Judge 6,Judge 7,Judge 8,Judge 9,Judge 10,Judge 11,Judge 12
-Bridging the Gap for Women - Level Up with the Entrepreneur Residency ,Advanced Materials,128,James Pink,Raegen Siegfried,Paul Coletti,Pete Effler
-Bedrock Oyster,Agriculture,18,Craig Chval,Michael Jennings,Scott Noble,Francis Williams,Mike Delany,Jim Davis,Benjamin Saydah,Julie Rotolo,Tyler Hudson-Crimi,Andreas Widmer,Philip McBride
-Chameleon Foods,Agriculture,26,Philip McBride,Scott Noble,Andreas Widmer,Sean Murdock,Justin Obletz,Craig Chval,Ray Vanek,Julie Rotolo,Benjamin Saydah,Ed Daniels,Craig Anderson
-Cleva,Agriculture,34,Mike Delany,Robert Fulton,Benjamin Saydah,Ray Vanek,Jim Davis,Scott Noble,Justin Obletz,Michael Jennings,Craig Chval,Soraya Hernandez,Philip McBride
-SetaTech,Agriculture,47,Francis Williams,Ray Vanek,Tyler Hudson-Crimi,Soraya Hernandez,Philip McBride,Ed Daniels,Justin Obletz,Benjamin Saydah,Andreas Widmer,Michael Jennings,Scott Noble
-Shipshape Urban Farms,Agriculture,61,Scott Noble,Andreas Widmer,Tyler Hudson-Crimi,Ed Daniels,Dhiraj Mehra,Soraya Hernandez,Ray Vanek,Jim Davis,Michael Jennings,Robert Fulton,Craig Anderson
-SoftSea,Agriculture,78,Benjamin Saydah,Andreas Widmer,Michael Jennings,Robert Fulton,Dhiraj Mehra,Ed Daniels,Mike Delany,Ray Vanek
-Trellis,Agriculture,114,Ray Vanek,Andreas Widmer,Mike Delany,Robert Fulton,Benjamin Saydah
-CampuSKey,B2B Digital/SaaS,33,Mark Dixon,Jim Hunt,Sean Murdock,Gary Sobolewski,Maryann Wolff,Bob Jank,Nick Schappler,Mike Scrudato,David Hemler,Tony Nguyen,Julie Rotolo
-Church Property Management,B2B Digital/SaaS,37,Tony Nguyen,Logan Herzog,Kristopher Priemer,Scott Noble,Mark Jevahirian,Evan Doney,Gary Sobolewski,Will Alverson,Soraya Hernandez,Theron Sarda,Patrick Farran
-Electus Global Education Company,B2B Digital/SaaS,40,Brett Belock,Dominic Go,Tony Nguyen,Mark Jevahirian,Kristin Marcuccilli,Eric Kullberg,Maryann Wolff,Pat Sigmon,Jane Hennessy,Mike Scrudato,Phil Calandra
-Flexwork,B2B Digital/SaaS,43,Justin Obletz,Tony Nguyen,Peter Rienks,William Harlan,Brian Cho,William O'Brien,Adam Sellke,Patrick Farran,Nitesh Gudapati,Mark Roche,Dominic Go
-GoFix,B2B Digital/SaaS,46,Patrick Farran,William O'Brien,Tim Kish,Tim O'Neill,Mark Dixon,Tim Connors,Michael Seiler,Brian Cho,Paul Miller,Evan Doney,Malaina Weldy
-GuidED,B2B Digital/SaaS,49,Gordon Geraci,Brian Cho,Ted Kubala,William Harlan,Larry Augustin,Rita Zinn,Justin Hintz,Mark Dixon,Joe Shonkwiler,Peter Flood,David Hemler
-"KINGA SAFETY, INC",B2B Digital/SaaS,51,Brian Davis,Kristin Marcuccilli,Theron Sarda,Johnny Whichard,Gordon Geraci,Paul Miller,Gary Sobolewski,Tom Keuten,Nicolas Schaettel,Manish Shah,Daniel Morden
-Lagom,B2B Digital/SaaS,54,Justin Hintz,Logan Herzog,John Gaither,Ryan Mitchell,Nitesh Gudapati,Tim O'Neill,Mark Dixon,Bob Jank,Joe Shonkwiler,Tom Wilkas,Steve Roe
-Launched,B2B Digital/SaaS,57,Mike Scrudato,Brian Cho,Jane Hennessy,Nick Schappler,Scott Berg,Scott Noble,Manish Shah,Syzmon Ryzner,Daniel Morden,Rafeal Reyes,Theron Sarda
-Mimik Studio,B2B Digital/SaaS,63,Manish Shah,William Harlan,Nicolas Schaettel,Justin Hintz,Joshua Francis,Pat Sigmon,Ryan Kreager,Tom Keuten,Brian Cho,Tim Connors,Rita Zinn
-Monti,B2B Digital/SaaS,67,Theron Sarda,Eric Meyers,Rahul Miglani,Gordon Geraci,Ryan Mitchell,Patrick Farran,Ted Kubala,Daniela Tomas,Tom Wilkas,Scott Berg,Justin Hintz
-Mortgage Backed Blockchain Staking,B2B Digital/SaaS,70,Tom Wilkas,Ryan Kreager,Nicolas Schaettel,Chris Orenchuk,Maryann Wolff,Will Alverson,Gordon Geraci,Syzmon Ryzner,Brian Davis,Jane Hennessy,Ryan Mitchell
-MoVE Office Automation,B2B Digital/SaaS,75,Ted Kubala,Tim Connors,Christopher Blum,Jane Hennessy,Phil Calandra,John Gaither,Manish Shah,Brian Cho,Brian Davis,Ed Daniels,Tom Wilkas
-MPA for Retail Systems,B2B Digital/SaaS,77,Scott Berg,Ed Daniels,Joshua Francis,Theron Sarda,Tyler Hudson-Crimi,Ryan Mitchell,Daniela Tomas,Brian Davis,Will Alverson,Ryan Kreager,Jay Breeden
-MYND,B2B Digital/SaaS,80,Joe Shonkwiler,Larry Augustin,Logan Herzog,Jay Breeden,Johnny Whichard,Scott Voulgaris,Bob Jank,Ed Daniels,Ted Kubala,Rahul Miglani,Pat Sigmon
-Nautilus,B2B Digital/SaaS,85,Ted Kubala,Mark Roche,Joe Shonkwiler,Steve Roe,Daniel Morden,Eric Meyers,Ryan Mitchell,Brian Cho,Christopher Blum,Scott Voulgaris,Brian Davis
-qibri,B2B Digital/SaaS,87,Nicolas Schaettel,Mark Roche,Ted Kubala,Daniela Tomas,Ryan Mitchell,Brian Cho,Larry Augustin,Bob Jank,Misha Shemyakin,John Gaither,Phil Calandra
-Routora,B2B Digital/SaaS,90,Misha Shemyakin,Bob Jank,Maryann Wolff,Larry Augustin,Rafeal Reyes,Nicolas Schaettel,Mark Roche,Phil Calandra,Peter Rienks,Eric Meyers,Jay DeCoons
-SpotSight,B2B Digital/SaaS,96,Steve Roe,Pete Effler,Misha Shemyakin,Rafeal Reyes,Bob Jank,Peter Rienks,Phil Calandra,Mark Roche,Theron Sarda,Nicolas Schaettel,Christopher Blum
-StudyPort,B2B Digital/SaaS,102,Larry Augustin,Brian Davis,Nicolas Schaettel,Theron Sarda,Steve Roe,Rafeal Reyes,Daniel Morden,Mark Roche,William Harlan,Phil Calandra,Ted Kubala
-TD3 Innovative Gaming,B2B Digital/SaaS,106,William Harlan,Phil Calandra,Larry Augustin,Brian Davis,John Gaither,Pete Effler,Daniel Morden,Mark Roche,Steve Roe,Peter Rienks,Rafeal Reyes
-TipOff,B2B Digital/SaaS,118,John Gaither,Pete Effler,Larry Augustin,Misha Shemyakin,Brian Davis,Phil Calandra,Mark Roche
-Top Prospect,B2B Digital/SaaS,131,Pete Effler,Phil Calandra,Larry Augustin,Brian Davis,Misha Shemyakin
-activeARE,B2C Digital/Apps,0,Chris Orenchuk,Justin Hintz,Shelley Simon,Jay Breeden,Nick Schappler,Tom Keuten,Tyler Hudson-Crimi,Paul Miller,Johnny Whichard,Pat Sigmon,David Hemler
-Artistically Stupid,B2C Digital/Apps,1,Pat Sigmon,Kristin Marcuccilli,Jim Hunt,Brett Belock,Paul Miller,Scott Voulgaris,David Hemler,Tom Wilkas,Tim Kish,Mike Scrudato,Johnny Whichard
-ArtVision,B2C Digital/Apps,2,Michael Seiler,Scott Noble,Mike Scrudato,Eric Kullberg,Thomas Jensen,Tim O'Neill,Sean Murdock,Tim Kish,Pat Sigmon,Scott Berg,Aaron Wallace
-Astromata,B2C Digital/Apps,3,Syzmon Ryzner,Malaina Weldy,Tim O'Neill,German Estrada,Mark Jevahirian,Alyssa Jank,Scott Berg,Adam Sellke,Tim Kish,David Hemler,Keith Harwood
-AUXIN Games,B2C Digital/Apps,4,David Brenner,Scott Berg,BIll Rossiter,Philip McBride,Craig Anderson,Tim O'Neill,Kristopher Priemer,Sean Murdock,Julie Rotolo,Mark Dixon,Alyssa Jank
-Ave,B2C Digital/Apps,5,Rahul Miglani,Mike Scrudato,Paul Miller,Eric Kullberg,Justin Hintz,Mike Ferrigno,Justin Obletz,Evan Doney,Scott Berg,Kristopher Priemer,Tony Nguyen
-BeautyAround,B2C Digital/Apps,6,Gordon Geraci,David Brenner,Shelley Simon,Peter Flood,Aaron Wallace,Thomas Jensen,Sean Murdock,Patrick Farran,Craig Chval,Colin Keeler,Ryan Mitchell
-Byond,B2C Digital/Apps,7,Tim Connors,Brett Belock,Peter Flood,Philip McBride,Joshua Francis,German Estrada,Soraya Hernandez,Nitesh Gudapati,Kristin Marcuccilli,Johnny Whichard,Jim Davis
-C I V I T A S   ,B2C Digital/Apps,8,Patrick Farran,Alyssa Jank,BIll Rossiter,Ryan Kreager,Kristopher Priemer,Brett Belock,John Gleason,Francis Williams,Mike Scrudato,Gary Sobolewski,Jim Hunt
-clearspace,B2C Digital/Apps,9,Eric Kullberg,Tim Connors,Scott Noble,Mike Ferrigno,Julie Rotolo,Chris Orenchuk,Peter Flood,Tony Nguyen,Alyssa Jank,Nick Schappler,Shelley Simon
-Cobolic,B2C Digital/Apps,10,Tom Keuten,Will Alverson,Paul Miller,Mark Jevahirian,Daniela Tomas,Dominic Go,Keith Harwood,Joe Shonkwiler,Tom Wilkas,Justin Hintz,Rita Zinn
-coffee + good,B2C Digital/Apps,11,Scott Voulgaris,Craig Chval,Jim Hunt,Philip McBride,Joshua Francis,Eric Kullberg,Mark Dixon,Tyler Hudson-Crimi,Evan Doney,Kristopher Priemer,Soraya Hernandez
-Comma,B2C Digital/Apps,12,Dominic Go,Syzmon Ryzner,Manish Shah,Tom Keuten,Kristin Marcuccilli,Tom Wilkas,Scott Noble,Michael Seiler,Kristopher Priemer,Adam Sellke,Logan Herzog
-CutCapture,B2C Digital/Apps,13,Jim Davis,Michael Seiler,Manish Shah,Tom Keuten,Jay Breeden,Kristin Marcuccilli,Tony Nguyen,Steve Asiala,Daniela Tomas,Julie Rotolo,Tyler Hudson-Crimi
-EYIT Startup Financing Initiative (ESFI),B2C Digital/Apps,14,Gary Sobolewski,Brett Belock,Sean Murdock,Syzmon Ryzner,Adam Sellke,Mark Dixon,Francis Williams,German Estrada,Craig Anderson,Tim Connors,Jay DeCoons
-Finbud,B2C Digital/Apps,15,David Hemler,Mike Scrudato,Gordon Geraci,Julie Rotolo,Rita Zinn,Dominic Go,Craig Chval,Ryan Kreager,German Estrada,Gary Sobolewski,Adam Sellke
-Gehr Co.,B2C Digital/Apps,16,Alyssa Jank,Craig Chval,Aaron Wallace,Michael Seiler,Gordon Geraci,Nitesh Gudapati,Mark Jevahirian,Mike Ferrigno,Julie Rotolo,Syzmon Ryzner,BIll Rossiter
-GiftShop,B2C Digital/Apps,17,Tim Kish,Thomas Jensen,Adam Sellke,Alyssa Jank,Tom Keuten,Justin Obletz,Craig Anderson,Jay DeCoons,Evan Doney,Brett Belock,Tom Wilkas
-GotInfo,B2C Digital/Apps,19,Scott Berg,Nitesh Gudapati,German Estrada,Peter Flood,Syzmon Ryzner,Mike Scrudato,Nick Schappler,Evan Doney,Alyssa Jank,Sean Murdock,Eric Kullberg
-JubileeDAO & Currency for the Common Good,B2C Digital/Apps,20,Alyssa Jank,Tom Wilkas,Justin Hintz,Philip McBride,Mark Jevahirian,Francis Williams,Joshua Francis,Jim Hunt,Nitesh Gudapati,Pat Sigmon,Tyler Hudson-Crimi
-Kopa,B2C Digital/Apps,22,Gordon Geraci,Evan Doney,Justin Obletz,Manish Shah,Will Alverson,Sean Murdock,Francis Williams,Tom Keuten,Dominic Go,Kristin Marcuccilli,Shelley Simon
-Lawroo,B2C Digital/Apps,25,German Estrada,BIll Rossiter,Julie Rotolo,Jay DeCoons,Sean Murdock,Will Alverson,Dominic Go,Philip McBride,Scott Voulgaris,Jim Davis,Justin Obletz
-Maet,B2C Digital/Apps,28,Rahul Miglani,Jane Hennessy,Mark Jevahirian,Brett Belock,Eric Kullberg,Nitesh Gudapati,Michael Seiler,Francis Williams,Jim Davis,Shelley Simon,Tony Nguyen
-Maia,B2C Digital/Apps,30,Nick Schappler,Adam Sellke,William O'Brien,Matt VanderGoot,Kristopher Priemer,German Estrada,Nitesh Gudapati,Craig Chval,Logan Herzog,Malaina Weldy,Jay Breeden
-Minerva,B2C Digital/Apps,32,Maryann Wolff,Jim Hunt,Julie Rotolo,Tony Nguyen,David Hemler,Mike Ferrigno,Michael Seiler,Matt VanderGoot,Steve Asiala,BIll Rossiter,Mark Jevahirian
-MiniFort,B2C Digital/Apps,36,Justin Obletz,Peter Flood,Paul Miller,Ryan Kreager,Tom Keuten,Logan Herzog,Matt VanderGoot,Brett Belock,Mark Dixon,William O'Brien,Patrick Farran
-Mr. Barber on the Move,B2C Digital/Apps,39,Jay Breeden,John Gleason,Brett Belock,Eric Kullberg,BIll Rossiter,Kristin Marcuccilli,Justin Obletz,Craig Anderson,Mark Dixon,Mark Jevahirian,Ryan Kreager
-MyStory,B2C Digital/Apps,42,Daniela Tomas,Steve Asiala,Eric Kullberg,Jane Hennessy,Dominic Go,Kristin Marcuccilli,Kristopher Priemer,BIll Rossiter,Alyssa Jank,Philip McBride,Rahul Miglani
-Nora+,B2C Digital/Apps,45,German Estrada,Joshua Francis,Dominic Go,Tony Nguyen,Jim Hunt,Tim Connors,Nick Schappler,Steve Asiala,Colin Keeler,Malaina Weldy,Paul Miller
-Period.,B2C Digital/Apps,48,Keith Harwood,William O'Brien,Steve Asiala,Scott Voulgaris,Mike Ferrigno,Francis Williams,Brett Belock,Tim O'Neill,Paul Miller,Tom Keuten,Shelley Simon
-Podstax,B2C Digital/Apps,52,Craig Anderson,Chris Orenchuk,Michael Seiler,William O'Brien,Mike Ferrigno,Evan Doney,Aaron Wallace,Justin Hintz,David Brenner,Jane Hennessy,Colin Keeler
-ProfProven,B2C Digital/Apps,55,Mike Ferrigno,Will Alverson,Peter Flood,Johnny Whichard,Tim Connors,Nick Schappler,Rahul Miglani,German Estrada,Nitesh Gudapati,Tim Kish,Logan Herzog
-QuoteNote,B2C Digital/Apps,59,Matt VanderGoot,Nick Schappler,Joe Shonkwiler,Keith Harwood,Rita Zinn,Colin Keeler,Patrick Farran,Daniela Tomas,Scott Voulgaris,Craig Anderson,Manish Shah
-Rydr,B2C Digital/Apps,62,Rita Zinn,Malaina Weldy,Soraya Hernandez,Pat Sigmon,Ryan Kreager,Tim O'Neill,Craig Anderson,Mike Scrudato,Joe Shonkwiler,Syzmon Ryzner,Jim Hunt
-Shortcastle,B2C Digital/Apps,66,Jay Breeden,Thomas Jensen,Michael Seiler,Maryann Wolff,German Estrada,Jay DeCoons,Syzmon Ryzner,Malaina Weldy,Will Alverson,Logan Herzog,David Brenner
-Steed,B2C Digital/Apps,69,Rita Zinn,David Brenner,Steve Asiala,Syzmon Ryzner,Scott Berg,Rahul Miglani,Mike Ferrigno,Scott Voulgaris,Gordon Geraci,Tom Wilkas,Mark Dixon
-Stroll Care,B2C Digital/Apps,73,Gordon Geraci,Eric Meyers,Colin Keeler,Manish Shah,John Gleason,Steve Asiala,Aaron Wallace,Johnny Whichard,Patrick Farran,Jim Hunt,Jim Davis
-Study Abroad Go,B2C Digital/Apps,76,Colin Keeler,Michael Seiler,Scott Berg,Logan Herzog,Chris Orenchuk,Tim Connors,Manish Shah,Ryan Kreager,William O'Brien,Pat Sigmon,Johnny Whichard
-TeacherTime Call Coverage,B2C Digital/Apps,79,Eric Meyers,Keith Harwood,Tim Connors,David Brenner,Logan Herzog,Ryan Mitchell,Rita Zinn,Pat Sigmon,Scott Voulgaris,John Gleason,Eric Kullberg
-The People's Data Project,B2C Digital/Apps,81,Joshua Francis,Will Alverson,Rahul Miglani,Jay DeCoons,David Brenner,Joe Shonkwiler,Keith Harwood,Matt VanderGoot,Steve Asiala,Colin Keeler,Johnny Whichard
-The Working Life,B2C Digital/Apps,84,Daniela Tomas,Colin Keeler,Johnny Whichard,Rahul Miglani,Eric Meyers,Scott Voulgaris,Will Alverson,Joe Shonkwiler,John Gleason,Maryann Wolff,Ryan Kreager
-Unify,B2C Digital/Apps,86,Eric Meyers,Mike Ferrigno,John Gleason,Colin Keeler,Jay DeCoons,Malaina Weldy,Maryann Wolff,David Brenner,Daniela Tomas,Thomas Jensen,Aaron Wallace
-Wend,B2C Digital/Apps,89,Keith Harwood,Daniela Tomas,John Gleason,Thomas Jensen,David Brenner,Ryan Mitchell,Mike Ferrigno,Aaron Wallace,Jay DeCoons,Eric Meyers,Maryann Wolff
-You Give,B2C Digital/Apps,91,Aaron Wallace,Keith Harwood,John Gleason,Jay DeCoons,Maryann Wolff,Thomas Jensen
-ZuzuForKids.com,B2C Digital/Apps,95,Thomas Jensen,Aaron Wallace,Keith Harwood
-Babble Therapy Life Coach,B2C Physical Products,64,Emily Stoler,John Gleason,Amy Buchan Siegfried,Joseph Anderson,Tyler Hudson-Crimi,William Harlan,Dhiraj Mehra,Rafeal Reyes,Rudy Reyes Jr.,Tiffany Tibbot,Steve Roe
-CTM (Competitive Training Metrics),B2C Physical Products,68,Rita Zinn,William O'Brien,Ellen Dutton,Chris Orenchuk,Dominic Go,Patrick Farran,Austin Fazio,Jeffrey Hebig,Joshua Francis,Jim Davis,Jason McCaherty
-Five Star Life Arts,B2C Physical Products,74,Tyler Hudson-Crimi,Chris Orenchuk,Dhiraj Mehra,William O'Brien,David Brenner,Kerry McNeilly,Jay Breeden,Janet Wolff,John Schroeder,Khoa Huynh,Jim Hunt
-General Debauchery ,B2C Physical Products,82,Matt VanderGoot,Julie Moylan,Aaron Cleavinger,Colin Keeler,Eric Wiechart,Ellen Dutton,Bob Jank,Steve Roe,Joshua Francis,Brian Cho,Rudy Reyes Jr.
-heARsight,B2C Physical Products,88,Kerry McNeilly,Jason McCaherty,Steve Roe,Thomas Jensen,Dhiraj Mehra,Rudy Reyes Jr.,Brian Cho,Larry Arseniadis,Joseph Anderson,William Harlan,John Schroeder
-LOOMING,B2C Physical Products,93,Dhiraj Mehra,Tiffany Tibbot,Christopher Blum,Larry Arseniadis,Eric Wiechart,Julie Moylan,Jay DeCoons,Daniel Morden,John Schroeder,Rafeal Reyes,Mieczyslaw Jodziewicz
-PaceDrone,B2C Physical Products,97,Aaron Cleavinger,Ryan Olander,Kerry McNeilly,Eric Wiechart,Daniel Morden,Emily Stoler,Amy Buchan Siegfried,Julie Moylan,William Harlan,Jason McCaherty,Khoa Huynh
-Power Tie Giveaway In A Box,B2C Physical Products,99,Eric Wiechart,John Schroeder,Aaron Cleavinger,Jeffrey Hebig,Joseph Anderson,Jason McCaherty,Mieczyslaw Jodziewicz,Rafeal Reyes,Austin Fazio,William Harlan,Tiffany Tibbot
-ShoreUp,B2C Physical Products,104,Tiffany Tibbot,Daniel Morden,Emily Stoler,Joseph Anderson,Ryan Olander,William Harlan,Eric Wiechart,Rafeal Reyes,Amy Buchan Siegfried,Rudy Reyes Jr.,Mieczyslaw Jodziewicz
-Tangler Wrangler,B2C Physical Products,109,Tiffany Tibbot,Rudy Reyes Jr.,Steve Roe,Eric Wiechart,Ryan Olander,Rafeal Reyes,Austin Fazio,Larry Arseniadis,Daniel Morden,Ellen Dutton,Amy Buchan Siegfried
-The Vitalist,B2C Physical Products,116,Emily Stoler,Rudy Reyes Jr.,Larry Arseniadis,Steve Roe,Joseph Anderson,Julie Moylan,Aaron Cleavinger,Jeffrey Hebig,Tiffany Tibbot,Amy Buchan Siegfried,Ryan Olander
-VibeGrips,B2C Physical Products,119,Amy Buchan Siegfried,Rudy Reyes Jr.,Ellen Dutton,Jeffrey Hebig,Tiffany Tibbot,Emily Stoler,Julie Moylan,Aaron Cleavinger,Ryan Olander
-XSEED Properties,B2C Physical Products,121,Aaron Cleavinger,Ellen Dutton,Emily Stoler,Rudy Reyes Jr.
-A Gluten Free Cottage Bakery ,Commerce/Retail,21,Richard Daniels,Christopher Blum,Peter Rienks,Chris Orenchuk,Shelley Simon,Jason McCaherty,Patrick McMahon,Mike Belatti,Craig Chval,BIll Rossiter,Janet Wolff
-Back in the Bend,Commerce/Retail,23,Richard Daniels,Patrick Dolan,Christopher Blum,Evan Doney,Sean Murdock,Tim Kish,Neil Kane,Soraya Hernandez,Craig Chval,Tim O'Neill,Khoa Huynh
-Bike Basics,Commerce/Retail,24,Tiffany Tibbot,Tim Kish,Ellen Dutton,Chris Orenchuk,Jason McCaherty,Malaina Weldy,Khoa Huynh,Eric Meyers,Rita Zinn,David Hemler,Austin Fazio
-Call Me King Shoes,Commerce/Retail,27,Justin Hintz,Kerry McNeilly,Khoa Huynh,Steve Asiala,Gary Sobolewski,Theron Sarda,Christopher Blum,David Hemler,Andreas Widmer,Dhiraj Mehra,Nick Schappler
-Children's Home Infusion Pharmacy,Commerce/Retail,29,Joe Mueller,Jane Hennessy,Janet Wolff,Kristopher Priemer,BIll Rossiter,Francis Williams,Mark Jevahirian,Matt VanderGoot,Patrick Dolan,Larry Arseniadis,Tim O'Neill
-Chopan - Sourdough Bakery,Commerce/Retail,31,Neil Kane,Alyssa Jank,Matt VanderGoot,John Schroeder,Tom Marek,Ruben Moreno,Patrick McMahon,Jane Hennessy,Adam Sellke,Joseph Anderson,Janet Wolff
-CoSAL,Commerce/Retail,35,Kerry McNeilly,Francis Williams,Jeffrey Hebig,Kristopher Priemer,Chris Orenchuk,Christopher Blum,Janet Wolff,Peter Flood,Shelley Simon,Neil Kane,Tim Kish
-Desi,Commerce/Retail,38,Adam Sellke,Patrick Dolan,Nitesh Gudapati,Janet Wolff,Khoa Huynh,David Hemler,Larry Arseniadis,Theron Sarda,BIll Rossiter,Rudy Reyes Jr.,Tim O'Neill
-Enabler ,Commerce/Retail,41,Matt VanderGoot,John Schroeder,Kristin Marcuccilli,Adam Sellke,Ellen Dutton,Amy Buchan Siegfried,Patrick Dolan,Tom Marek,William O'Brien,Jason McCaherty,Tim Kish
-Ezza Market ,Commerce/Retail,44,Jeffrey Heinichen,Jay Breeden,Tiffany Tibbot,Joe Mueller,Mike Belatti,Patrick Dolan,Khoa Huynh,Gary Sobolewski,Steve Asiala,Jason McCaherty,Austin Fazio
-Friends of Notre Dame,Commerce/Retail,50,Kerry McNeilly,Patrick Dolan,Mike Delany,Mike Belatti,Maria Bailey,Ryan Olander,Malaina Weldy,Joe Mueller,John Schroeder,Evan Doney,Dhiraj Mehra
-Frontier,Commerce/Retail,53,Shelley Simon,Peter Rienks,Jim Davis,Dhiraj Mehra,Kerry McNeilly,Andreas Widmer,Joshua Francis,Khoa Huynh,Mike Delany,Soraya Hernandez,Joseph Anderson
-G. Grips,Commerce/Retail,56,Janet Wolff,Eric Meyers,Christopher Blum,Neil Kane,Tom Marek,Joseph Anderson,Dhiraj Mehra,Aaron Cleavinger,T. Drew Mitchell,Eric Wiechart,Paul Miller
-GreenBaby,Commerce/Retail,60,Craig Anderson,Gary Sobolewski,Jeffrey Heinichen,T. Drew Mitchell,Neil Kane,Amy Buchan Siegfried,Peter Flood,Mike Delany,Shelley Simon,Austin Fazio,Aaron Cleavinger
-Jetta’s sweet & salty kettle corn ,Commerce/Retail,65,Ruben Moreno,Janet Wolff,Jane Hennessy,Tom Marek,Doon Wintz,Mieczyslaw Jodziewicz,Ryan Olander,Jay Breeden,Ellen Dutton,Thomas Jensen,Jason McCaherty
-Junior Changemakers,Commerce/Retail,72,Austin Fazio,Michael Jennings,Christopher Blum,Doon Wintz,Ed Daniels,Peter Rienks,Gary Sobolewski,Tiffany Tibbot,Matt VanderGoot,Ellen Dutton,Maria Bailey
-Legacy LLC,Commerce/Retail,83,Ellen Dutton,Malaina Weldy,Jeffrey Hebig,Michael Jennings,Austin Fazio,Joe Mueller,Khoa Huynh,Andreas Widmer,Ryan Olander,Ed Daniels,Richard Daniels
-Making the Shift,Commerce/Retail,94,Aaron Cleavinger,John Gleason,Ed Daniels,Martin Carrasco,Austin Fazio,John Schroeder,Larry Arseniadis,Mike Belatti,Mieczyslaw Jodziewicz,Eric Wiechart,Maria Bailey
-Manning Beverages LLC,Commerce/Retail,98,Mike Belatti,Tom Marek,Michael Jennings,Theron Sarda,T. Drew Mitchell,Larry Arseniadis,Eric Wiechart,Joseph Anderson,Janet Wolff,Patrick McMahon,Jeffrey Heinichen
-Netic Nails,Commerce/Retail,100,T. Drew Mitchell,Jason McCaherty,Martin Carrasco,Kerry McNeilly,Doon Wintz,Ryan Olander,Mieczyslaw Jodziewicz,Jeffrey Hebig,Maria Bailey,Joe Mueller,Ruben Moreno
-Project Shadow Band,Commerce/Retail,103,Austin Fazio,Michael Jennings,Patrick Dolan,Joe Mueller,Tom Marek,Neil Kane,Peter Rienks,Mike Belatti,Larry Arseniadis,Mieczyslaw Jodziewicz,T. Drew Mitchell
-Resenha/Sambinha Beverage Company,Commerce/Retail,107,Ruben Moreno,Neil Kane,Jeffrey Heinichen,Jeffrey Hebig,Amy Buchan Siegfried,Kerry McNeilly,Tom Marek,Maria Bailey,Mike Delany,Doon Wintz,Joe Mueller
-Samaritan,Commerce/Retail,111,Amy Buchan Siegfried,Jeffrey Heinichen,Jeffrey Hebig,Ruben Moreno,Joseph Anderson,Mike Delany,Michael Jennings,Patrick Dolan,Aaron Cleavinger,Mieczyslaw Jodziewicz,Maria Bailey
-SeekSmart,Commerce/Retail,115,Patrick McMahon,John Schroeder,Jeffrey Hebig,Larry Arseniadis,Mieczyslaw Jodziewicz,T. Drew Mitchell,Rudy Reyes Jr.,Joe Mueller,Neil Kane,Ruben Moreno,Maria Bailey
-Small Animal Coffee House,Commerce/Retail,120,Ruben Moreno,Mike Delany,Neil Kane,T. Drew Mitchell,Ryan Olander,Martin Carrasco,Patrick Dolan,Patrick McMahon,Maria Bailey,Doon Wintz,Joe Mueller
-Smart Foods,Commerce/Retail,122,Doon Wintz,Richard Daniels,Patrick Dolan,Patrick McMahon,Mike Belatti,T. Drew Mitchell,Maria Bailey,Martin Carrasco,Joe Mueller
-"The Wholesome Package, LLC",Commerce/Retail,123,Patrick McMahon,Martin Carrasco,Mike Belatti,Doon Wintz,Richard Daniels,T. Drew Mitchell,Maria Bailey
-Venus Kenya Sacco Ltd ,Commerce/Retail,126,Richard Daniels,Doon Wintz,Mike Belatti,T. Drew Mitchell
-SpoRx Therapeutics Inc.,Drug Development,110,Paul Coletti,Jim Farrington,John Gaither,Jim Winkler,Martin Carrasco,Emily Stoler,Pat Lemieux,Julie Moylan,James Pink
-Van Heron Labs,Drug Development,129,Jim Winkler,Jim Farrington,James Pink,Pat Lemieux
-Environmentalists for Education (E4E),Energy/Defense/Environmental,108,Mark Roche,Andreas Widmer,Tom Marek,Ray Vanek,Kerry McNeilly,James Pink,Aaron Wallace,Mieczyslaw Jodziewicz,Benjamin Saydah,Jeffrey Heinichen,Tom Winter
-JAM Solar,Energy/Defense/Environmental,112,Robert Fulton,Neil Kane,Julie Moylan,Martin Carrasco,Raegen Siegfried,John Schroeder,Misha Shemyakin,Jeffrey Heinichen,Paul Coletti,Emily Stoler,Peter Rienks
-Mens et Manus,Energy/Defense/Environmental,117,James Pink,Ted Kubala,Julie Moylan,Benjamin Saydah,Paul Coletti,Misha Shemyakin,Peter Rienks,Tom Winter,Raegen Siegfried,Daniel Morden,Ray Vanek
-Phone Panel Plus,Energy/Defense/Environmental,124,Raegen Siegfried,James Pink,Benjamin Saydah,Martin Carrasco,Tom Winter,Paul Coletti,Mark Roche,Mike Belatti,Robert Fulton,Misha Shemyakin,Marty Curran
-Shining Innovation LLC,Energy/Defense/Environmental,127,Tom Winter,Benjamin Saydah,James Pink,Misha Shemyakin,Marty Curran,Robert Fulton,Paul Coletti,Ray Vanek,Raegen Siegfried
-United Workers Government and Organizations News (UWGBO News),Energy/Defense/Environmental,132,Marty Curran,Ray Vanek,Robert Fulton,Raegen Siegfried,Tom Winter,Misha Shemyakin
-G-Dustbin,Manufacturing/Supply Chain,133,Richard Daniels,Pete Effler,Doon Wintz,Marty Curran,Larry Augustin
-BioMarq,Medical Device/Diagnostics,58,Ryan Mitchell,Rahul Miglani,John Bevan Annaloro,Jason Sloan,Khoa Huynh,Emily Stoler,Nicolas Schaettel,Soraya Hernandez,Julie Moylan,Peter Flood,Joe Shonkwiler
-Duniven Dental - Making Improved Dental Instruments,Medical Device/Diagnostics,71,Jason Sloan,Larry Mastrovich,Janet Wolff,Jeffrey Heinichen,Marty Curran,Nicolas Schaettel,Martin Carrasco,James Pink,Bob Jank,Pat Lemieux,John Gaither
-HexBR,Medical Device/Diagnostics,92,Jeffrey Heinichen,James Pink,Patrick McMahon,Bob Jank,John Bevan Annaloro,Emily Stoler,Jason Sloan,Ruben Moreno,Tom Marek,Paul Coletti,Nicolas Schaettel
-histoimage,Medical Device/Diagnostics,101,Jim Farrington,Martin Carrasco,Julie Moylan,John Gaither,Larry Mastrovich,Paul Coletti,Patrick McMahon,Eric Wiechart,Ted Kubala,Bob Jank,Dom Gatto
-iMD Device (Incision Manipulation Deterrent Device),Medical Device/Diagnostics,105,Patrick McMahon,James Kelly,Dom Gatto,John Bevan Annaloro,Jim Winkler,Jeffrey Heinichen,Ted Kubala,Larry Mastrovich,John Gaither,Ruben Moreno,Marty Curran
-Luonnon,Medical Device/Diagnostics,113,James Kelly,Pat Lemieux,Jim Farrington,Marty Curran,Tom Marek,Dom Gatto,Ruben Moreno,Paul Coletti,Larry Mastrovich,John Gaither,John Bevan Annaloro
-NeuroBell,Medical Device/Diagnostics,125,Larry Mastrovich,James Kelly,Jason Sloan,Marty Curran,Jim Farrington,Pat Lemieux,Paul Coletti,John Bevan Annaloro,Dom Gatto,James Pink,Jim Winkler
-sensitv,Medical Device/Diagnostics,130,John Bevan Annaloro,Larry Mastrovich,Marty Curran,Jim Winkler,Jason Sloan,James Kelly,Dom Gatto,Pat Lemieux,Jim Farrington
-thecarelink,Medical Device/Diagnostics,134,Larry Mastrovich,James Kelly,Dom Gatto,Jason Sloan,John Bevan Annaloro,Jim Winkler,Jim Farrington,Pat Lemieux,Marty Curran
+Company,Category,Queue Number,# Judges,# Matching,# Fill-In,Judge 1,Judge 2,Judge 3,Judge 4,Judge 5,Judge 6,Judge 7,Judge 8,Judge 9,Judge 10,Judge 11,Judge 12
+Bridging the Gap for Women - Level Up with the Entrepreneur Residency ,Advanced Materials,128,4,4,0,Benjamin Saydah,Paul Coletti,Raegen Siegfried,James Pink
+Bedrock Oyster,Agriculture,18,11,11,0,Craig Chval,Michael Jennings,Craig Anderson,Philip McBride,Julie Rotolo,Scott Noble,Jim Davis,Sean Murdock,Soraya Hernandez,Ed Daniels,Justin Obletz
+Chameleon Foods,Agriculture,26,11,11,0,Mike Delany,Michael Jennings,Benjamin Saydah,Julie Rotolo,Jim Davis,Ed Daniels,Ray Vanek,Philip McBride,Tyler Hudson-Crimi,Craig Anderson,Justin Obletz
+Cleva,Agriculture,38,11,11,0,Robert Fulton,Michael Jennings,Sean Murdock,Francis Williams,Benjamin Saydah,Tyler Hudson-Crimi,Mike Delany,Soraya Hernandez,Dhiraj Mehra,Julie Rotolo,Scott Noble
+SetaTech,Agriculture,47,11,11,0,Ed Daniels,Ray Vanek,Justin Obletz,Robert Fulton,Michael Jennings,Jim Davis,Dhiraj Mehra,Benjamin Saydah,Scott Noble,Soraya Hernandez,Craig Chval
+Shipshape Urban Farms,Agriculture,61,11,11,0,Mike Delany,Robert Fulton,Tyler Hudson-Crimi,Dhiraj Mehra,Ed Daniels,Craig Anderson,Scott Noble,Benjamin Saydah,Michael Jennings,Craig Chval,Andreas Widmer
+SoftSea,Agriculture,81,8,8,0,Ray Vanek,Dhiraj Mehra,Benjamin Saydah,Andreas Widmer,Mike Delany,Ed Daniels,Robert Fulton,Michael Jennings
+Trellis,Agriculture,121,3,3,0,Ray Vanek,Robert Fulton,Benjamin Saydah
+CampuSKey,B2B Digital/SaaS,33,11,11,0,Joe Shonkwiler,Tom Keuten,Dominic Go,Tom Wilkas,Malaina Weldy,Nick Schappler,Rita Zinn,Logan Herzog,Tim O'Neill,Pat Sigmon,Julie Rotolo
+Church Property Management,B2B Digital/SaaS,36,11,11,0,Philip McBride,Nitesh Gudapati,Larry Augustin,Pete Effler,Peter Rienks,Evan Doney,Rahul Miglani,Daniela Tomas,Johnny Whichard,William O'Brien,Julie Rotolo
+Electus Global Education Company,B2B Digital/SaaS,40,11,11,0,Gordon Geraci,Mark Dixon,William Harlan,Adam Sellke,Rita Zinn,Jane Hennessy,Matt VanderGoot,Nick Schappler,Pete Effler,Tim Kish,Peter Rienks
+Flexwork,B2B Digital/SaaS,43,11,11,0,Steve Roe,Maryann Wolff,Misha Shemyakin,German Estrada,Justin Hintz,Daniel Morden,Evan Doney,BIll Rossiter,Philip McBride,Kristin Marcuccilli,Nitesh Gudapati
+GoFix,B2B Digital/SaaS,46,11,11,0,Peter Flood,Johnny Whichard,William O'Brien,Paul Miller,Maryann Wolff,Chris Orenchuk,Mark Roche,Ted Kubala,Mark Jevahirian,Manish Shah,Sean Murdock
+GuidED,B2B Digital/SaaS,49,11,11,0,Brian Davis,Kristopher Priemer,Michael Seiler,Mark Jevahirian,Tim Kish,Daniel Morden,Eric Meyers,Peter Rienks,Mark Dixon,Syzmon Ryzner,German Estrada
+"KINGA SAFETY, INC",B2B Digital/SaaS,53,11,11,0,Craig Chval,German Estrada,Chris Orenchuk,Brian Cho,Theron Sarda,Scott Voulgaris,Dominic Go,Eric Kullberg,Maryann Wolff,Bob Jank,Misha Shemyakin
+Lagom,B2B Digital/SaaS,57,11,11,0,Mark Roche,Tom Wilkas,Ed Daniels,Rahul Miglani,William O'Brien,Tony Nguyen,Brett Belock,Rafeal Reyes,Tom Keuten,William Harlan,Ted Kubala
+Launched,B2B Digital/SaaS,60,11,11,0,Craig Chval,Gordon Geraci,John Gaither,Logan Herzog,Peter Flood,Soraya Hernandez,Mike Scrudato,Pat Sigmon,Phil Calandra,Justin Hintz,Brian Davis
+Mimik Studio,B2B Digital/SaaS,64,11,11,0,Phil Calandra,Steve Roe,Eric Kullberg,Ed Daniels,Jay Breeden,Jay DeCoons,Justin Obletz,Nitesh Gudapati,John Gaither,Scott Berg,Bob Jank
+Monti,B2B Digital/SaaS,69,11,11,0,Malaina Weldy,Tim Connors,Tim O'Neill,Daniela Tomas,Patrick Farran,Scott Berg,Misha Shemyakin,Mike Scrudato,Pat Sigmon,Kristin Marcuccilli,Tony Nguyen
+Mortgage Backed Blockchain Staking,B2B Digital/SaaS,73,11,11,0,Bob Jank,Michael Seiler,Eric Kullberg,Scott Voulgaris,Steve Roe,Eric Meyers,Will Alverson,Brett Belock,Justin Hintz,Ted Kubala,Rahul Miglani
+MoVE Office Automation,B2B Digital/SaaS,77,11,11,0,German Estrada,Ryan Kreager,Steve Roe,Daniela Tomas,Theron Sarda,Jim Hunt,Pete Effler,Ed Daniels,Peter Rienks,Bob Jank,Pat Sigmon
+MPA for Retail Systems,B2B Digital/SaaS,80,11,11,0,Mark Roche,Peter Rienks,Scott Berg,Brian Davis,Brett Belock,Tony Nguyen,Scott Noble,Nicolas Schaettel,Kristopher Priemer,Pete Effler,William Harlan
+MYND,B2B Digital/SaaS,84,11,11,0,Scott Voulgaris,Ted Kubala,Logan Herzog,Daniel Morden,Rafeal Reyes,Theron Sarda,Steve Roe,Tim O'Neill,Tony Nguyen,Eric Meyers,Bob Jank
+Nautilus,B2B Digital/SaaS,90,11,11,0,Steve Roe,Brian Cho,Mark Roche,Daniel Morden,Jay DeCoons,Larry Augustin,Christopher Blum,Theron Sarda,Bob Jank,Pete Effler,John Gaither
+qibri,B2B Digital/SaaS,91,11,11,0,Brian Davis,Ted Kubala,Pete Effler,Phil Calandra,Larry Augustin,Rafeal Reyes,Kristopher Priemer,John Gaither,Misha Shemyakin,William Harlan,Theron Sarda
+Routora,B2B Digital/SaaS,92,11,11,0,Nicolas Schaettel,Mark Roche,Misha Shemyakin,Christopher Blum,Larry Augustin,William Harlan,John Gaither,Bob Jank,Brian Cho,Rafeal Reyes,Pete Effler
+SpotSight,B2B Digital/SaaS,95,11,11,0,Larry Augustin,Mark Roche,Christopher Blum,William Harlan,Rafeal Reyes,Steve Roe,Brian Cho,Ted Kubala,Theron Sarda,Phil Calandra,Daniel Morden
+StudyPort,B2B Digital/SaaS,99,11,11,0,Mark Roche,Rafeal Reyes,Nicolas Schaettel,Theron Sarda,Ted Kubala,Brian Cho,Larry Augustin,John Gaither,Phil Calandra,Pete Effler,William Harlan
+TD3 Innovative Gaming,B2B Digital/SaaS,107,11,11,0,William Harlan,Steve Roe,Mark Roche,Daniel Morden,Phil Calandra,Larry Augustin,Brian Davis,John Gaither,Nicolas Schaettel,Pete Effler,Misha Shemyakin
+TipOff,B2B Digital/SaaS,113,8,8,0,Phil Calandra,Brian Davis,Pete Effler,Mark Roche,Misha Shemyakin,Brian Cho,Nicolas Schaettel,Larry Augustin
+Top Prospect,B2B Digital/SaaS,124,5,5,0,Larry Augustin,Brian Davis,Misha Shemyakin,Nicolas Schaettel,Phil Calandra
+activeARE,B2C Digital/Apps,0,11,11,0,Jay Breeden,Rita Zinn,Johnny Whichard,Dominic Go,Tim Connors,Keith Harwood,Syzmon Ryzner,Aaron Wallace,Gordon Geraci,Chris Orenchuk,Joe Shonkwiler
+Artistically Stupid,B2C Digital/Apps,1,11,11,0,Colin Keeler,Keith Harwood,Tyler Hudson-Crimi,Francis Williams,Mark Jevahirian,Mike Scrudato,Rahul Miglani,John Gleason,Jim Davis,Adam Sellke,Jim Hunt
+ArtVision,B2C Digital/Apps,2,11,11,0,Alyssa Jank,Sean Murdock,Mark Jevahirian,Michael Seiler,Julie Rotolo,German Estrada,Dominic Go,Paul Miller,Philip McBride,Rahul Miglani,Syzmon Ryzner
+Astromata,B2C Digital/Apps,3,11,11,0,Daniela Tomas,Mark Dixon,Jay Breeden,Francis Williams,Ryan Mitchell,Maryann Wolff,Syzmon Ryzner,Logan Herzog,Philip McBride,Rita Zinn,Matt VanderGoot
+AUXIN Games,B2C Digital/Apps,4,11,11,0,Justin Obletz,Tom Wilkas,Matt VanderGoot,David Hemler,Francis Williams,William O'Brien,Chris Orenchuk,Mike Ferrigno,Eric Meyers,Tim Kish,Jay Breeden
+Ave,B2C Digital/Apps,5,11,11,0,Keith Harwood,Eric Meyers,David Hemler,Maryann Wolff,Jane Hennessy,BIll Rossiter,John Gleason,Malaina Weldy,Jay DeCoons,Michael Seiler,Ryan Kreager
+BeautyAround,B2C Digital/Apps,6,11,11,0,Alyssa Jank,Adam Sellke,David Hemler,Will Alverson,Maryann Wolff,Joshua Francis,BIll Rossiter,Justin Hintz,German Estrada,Manish Shah,Mark Jevahirian
+Byond,B2C Digital/Apps,7,11,11,0,Tom Keuten,Craig Anderson,Jay Breeden,Francis Williams,Tom Wilkas,Steve Asiala,Rita Zinn,Paul Miller,Colin Keeler,Mark Dixon,Scott Noble
+C I V I T A S   ,B2C Digital/Apps,8,11,11,0,Sean Murdock,BIll Rossiter,Philip McBride,David Brenner,David Hemler,Tom Keuten,Justin Hintz,Nitesh Gudapati,Will Alverson,Gary Sobolewski,Eric Kullberg
+clearspace,B2C Digital/Apps,9,11,11,0,Tom Wilkas,Mike Ferrigno,Francis Williams,Paul Miller,Malaina Weldy,Tim Connors,Tony Nguyen,Mike Scrudato,Gordon Geraci,Michael Seiler,Joe Shonkwiler
+Cobolic,B2C Digital/Apps,10,11,11,0,Shelley Simon,Johnny Whichard,Jane Hennessy,Keith Harwood,Justin Hintz,Thomas Jensen,Manish Shah,Dominic Go,Syzmon Ryzner,Chris Orenchuk,Justin Obletz
+coffee + good,B2C Digital/Apps,11,11,11,0,Maryann Wolff,Mike Scrudato,Joshua Francis,Manish Shah,Jane Hennessy,David Hemler,Gary Sobolewski,Alyssa Jank,Colin Keeler,Adam Sellke,Dominic Go
+Comma,B2C Digital/Apps,12,11,11,0,Pat Sigmon,Michael Seiler,Eric Kullberg,Francis Williams,Tyler Hudson-Crimi,Rita Zinn,BIll Rossiter,Tony Nguyen,Tim Kish,Ryan Mitchell,Jane Hennessy
+CutCapture,B2C Digital/Apps,13,11,11,0,Chris Orenchuk,David Brenner,Syzmon Ryzner,Philip McBride,Tom Keuten,Craig Chval,Nitesh Gudapati,Eric Meyers,BIll Rossiter,Will Alverson,Rahul Miglani
+EYIT Startup Financing Initiative (ESFI),B2C Digital/Apps,14,11,11,0,BIll Rossiter,Tyler Hudson-Crimi,Nick Schappler,Ryan Mitchell,Sean Murdock,Tim Kish,Alyssa Jank,Joe Shonkwiler,Mark Dixon,Mike Scrudato,Adam Sellke
+Finbud,B2C Digital/Apps,15,11,11,0,Tyler Hudson-Crimi,Scott Voulgaris,Evan Doney,Manish Shah,Johnny Whichard,Kristin Marcuccilli,Patrick Farran,Will Alverson,Rita Zinn,Malaina Weldy,Nitesh Gudapati
+Gehr Co.,B2C Digital/Apps,16,11,11,0,Ryan Kreager,Maryann Wolff,Steve Asiala,Joe Shonkwiler,Jim Davis,Peter Flood,Eric Kullberg,Tom Wilkas,Aaron Wallace,Ryan Mitchell,Shelley Simon
+GiftShop,B2C Digital/Apps,17,11,11,0,Evan Doney,Thomas Jensen,Ryan Kreager,Logan Herzog,Malaina Weldy,Tom Keuten,Sean Murdock,Alyssa Jank,Tim O'Neill,Tim Kish,Steve Asiala
+GotInfo,B2C Digital/Apps,19,11,11,0,Paul Miller,David Brenner,Patrick Farran,Tyler Hudson-Crimi,Alyssa Jank,Johnny Whichard,Jim Hunt,Adam Sellke,Joe Shonkwiler,Tim Kish,Kristopher Priemer
+JubileeDAO & Currency for the Common Good,B2C Digital/Apps,20,11,11,0,Nitesh Gudapati,David Brenner,Craig Chval,Shelley Simon,Dominic Go,Alyssa Jank,Tony Nguyen,Joshua Francis,Gordon Geraci,Jane Hennessy,Justin Hintz
+Kopa,B2C Digital/Apps,22,11,11,0,Francis Williams,Mike Scrudato,Alyssa Jank,Julie Rotolo,Tim Kish,Will Alverson,Keith Harwood,Aaron Wallace,Gary Sobolewski,Manish Shah,Craig Anderson
+Lawroo,B2C Digital/Apps,25,11,11,0,Tom Wilkas,Kristin Marcuccilli,Tim Connors,Mark Dixon,Soraya Hernandez,Nitesh Gudapati,Matt VanderGoot,David Brenner,William O'Brien,Peter Flood,Craig Anderson
+Maet,B2C Digital/Apps,28,11,11,0,Craig Anderson,Scott Berg,Malaina Weldy,Matt VanderGoot,Rahul Miglani,David Brenner,Jay DeCoons,Jane Hennessy,Tom Wilkas,Nick Schappler,Joshua Francis
+Maia,B2C Digital/Apps,30,11,11,0,Tim Kish,Sean Murdock,Philip McBride,William O'Brien,Kristin Marcuccilli,Adam Sellke,Peter Flood,Aaron Wallace,John Gleason,Mike Scrudato,Pat Sigmon
+Minerva,B2C Digital/Apps,32,11,11,0,Evan Doney,Gary Sobolewski,Ryan Mitchell,Alyssa Jank,Tim O'Neill,Jay DeCoons,Rita Zinn,Justin Obletz,Julie Rotolo,Tim Connors,Joshua Francis
+MiniFort,B2C Digital/Apps,35,11,11,0,Will Alverson,Brett Belock,Mark Dixon,Logan Herzog,Gary Sobolewski,Tyler Hudson-Crimi,Adam Sellke,Daniela Tomas,Thomas Jensen,Tom Wilkas,Johnny Whichard
+Mr. Barber on the Move,B2C Digital/Apps,39,11,11,0,Ryan Mitchell,Tom Keuten,Gordon Geraci,Philip McBride,Rita Zinn,David Hemler,BIll Rossiter,Logan Herzog,Manish Shah,Shelley Simon,Joshua Francis
+MyStory,B2C Digital/Apps,42,11,11,0,Jim Davis,Mark Jevahirian,Steve Asiala,Mark Dixon,Tim Connors,Jim Hunt,Maryann Wolff,Jane Hennessy,Paul Miller,Brett Belock,David Brenner
+Nora+,B2C Digital/Apps,45,11,11,0,Mike Scrudato,Shelley Simon,Soraya Hernandez,Mark Jevahirian,Tim O'Neill,Craig Anderson,Scott Voulgaris,Craig Chval,Maryann Wolff,Peter Flood,Kristin Marcuccilli
+Period.,B2C Digital/Apps,50,11,11,0,Joe Shonkwiler,Mark Jevahirian,Logan Herzog,Michael Seiler,Patrick Farran,German Estrada,Nick Schappler,Tim Connors,Shelley Simon,Manish Shah,Mike Ferrigno
+Podstax,B2C Digital/Apps,52,11,11,0,Tom Wilkas,Justin Obletz,Aaron Wallace,Paul Miller,Manish Shah,Dominic Go,Tim O'Neill,Steve Asiala,Tom Keuten,Keith Harwood,Thomas Jensen
+ProfProven,B2C Digital/Apps,55,11,11,0,Will Alverson,Ryan Mitchell,Joe Shonkwiler,Eric Kullberg,David Brenner,Syzmon Ryzner,Peter Flood,Gordon Geraci,Johnny Whichard,Ryan Kreager,Steve Asiala
+QuoteNote,B2C Digital/Apps,59,11,11,0,Shelley Simon,Colin Keeler,Malaina Weldy,Michael Seiler,German Estrada,Tim Connors,Justin Obletz,Tony Nguyen,Daniela Tomas,Gordon Geraci,Dominic Go
+Rydr,B2C Digital/Apps,63,11,11,0,Joe Shonkwiler,Tim Connors,Dominic Go,Gordon Geraci,Mike Scrudato,Matt VanderGoot,Daniela Tomas,Aaron Wallace,Ryan Mitchell,Colin Keeler,Mark Dixon
+Shortcastle,B2C Digital/Apps,67,11,11,0,Thomas Jensen,Eric Kullberg,Nick Schappler,Justin Obletz,Gordon Geraci,William O'Brien,BIll Rossiter,Joe Shonkwiler,Shelley Simon,Scott Voulgaris,Matt VanderGoot
+Steed,B2C Digital/Apps,70,11,11,0,Tim O'Neill,Eric Kullberg,Patrick Farran,Tom Keuten,Michael Seiler,Scott Voulgaris,Matt VanderGoot,Johnny Whichard,Gary Sobolewski,Brett Belock,Will Alverson
+Stroll Care,B2C Digital/Apps,72,11,11,0,Scott Voulgaris,Joshua Francis,Brett Belock,Matt VanderGoot,Mike Ferrigno,Rahul Miglani,Jim Hunt,Aaron Wallace,Chris Orenchuk,Tim Connors,Logan Herzog
+Study Abroad Go,B2C Digital/Apps,76,11,11,0,Ryan Kreager,Scott Berg,Kristopher Priemer,Patrick Farran,Jay Breeden,Daniela Tomas,German Estrada,Paul Miller,Pat Sigmon,Will Alverson,Johnny Whichard
+TeacherTime Call Coverage,B2C Digital/Apps,79,11,11,0,Kristopher Priemer,Jay DeCoons,Michael Seiler,Scott Noble,Jim Hunt,Aaron Wallace,Tim O'Neill,Daniela Tomas,Rahul Miglani,Scott Berg,Pat Sigmon
+The People's Data Project,B2C Digital/Apps,83,11,11,0,Logan Herzog,Ryan Kreager,Syzmon Ryzner,Paul Miller,Eric Meyers,Manish Shah,Mike Ferrigno,Justin Hintz,Scott Voulgaris,John Gleason,Aaron Wallace
+The Working Life,B2C Digital/Apps,85,11,11,0,Patrick Farran,Tony Nguyen,Keith Harwood,German Estrada,John Gleason,Scott Berg,Aaron Wallace,Brett Belock,Syzmon Ryzner,Jim Hunt,Daniela Tomas
+Unify,B2C Digital/Apps,86,11,11,0,Ryan Kreager,Ryan Mitchell,Scott Berg,Kristopher Priemer,Jim Hunt,Scott Voulgaris,Jay DeCoons,Rahul Miglani,Keith Harwood,Tom Keuten,Syzmon Ryzner
+Wend,B2C Digital/Apps,87,7,7,0,Scott Berg,Jay DeCoons,Kristopher Priemer,Jim Hunt,Keith Harwood,Ryan Kreager,Ryan Mitchell
+You Give,B2C Digital/Apps,88,5,5,0,Keith Harwood,Kristopher Priemer,Ryan Kreager,Scott Berg,Jay DeCoons
+ZuzuForKids.com,B2C Digital/Apps,89,2,2,0,Jay DeCoons,Kristopher Priemer
+Babble Therapy Life Coach,B2C Physical Products,66,11,11,0,Amy Buchan Siegfried,Eric Wiechart,Pat Sigmon,Tiffany Tibbot,Daniel Morden,Colin Keeler,Tony Nguyen,Janet Wolff,Bob Jank,Steve Asiala,Patrick Farran
+CTM (Competitive Training Metrics),B2C Physical Products,68,11,11,0,Christopher Blum,Janet Wolff,Mike Ferrigno,Dhiraj Mehra,Bob Jank,William Harlan,Joshua Francis,Craig Anderson,Patrick Farran,Ellen Dutton,Mark Dixon
+Five Star Life Arts,B2C Physical Products,74,11,11,0,Joshua Francis,Eric Kullberg,Scott Noble,Chris Orenchuk,Mike Ferrigno,Tiffany Tibbot,Craig Anderson,Jay Breeden,Larry Arseniadis,Christopher Blum,Eric Wiechart
+General Debauchery ,B2C Physical Products,78,11,11,0,Janet Wolff,Mieczyslaw Jodziewicz,Jim Hunt,Rudy Reyes Jr.,Brett Belock,Thomas Jensen,Ryan Olander,Emily Stoler,Dhiraj Mehra,Julie Moylan,Larry Arseniadis
+heARsight,B2C Physical Products,93,11,11,0,Brian Cho,Joseph Anderson,Emily Stoler,John Schroeder,Aaron Cleavinger,Julie Moylan,Tiffany Tibbot,Larry Arseniadis,Janet Wolff,Austin Fazio,Daniel Morden
+LOOMING,B2C Physical Products,94,11,11,0,Larry Arseniadis,Jason McCaherty,Jeffrey Hebig,Rafeal Reyes,Emily Stoler,Christopher Blum,Bob Jank,Kerry McNeilly,Ryan Olander,Ellen Dutton,Austin Fazio
+PaceDrone,B2C Physical Products,98,11,11,0,Mieczyslaw Jodziewicz,Jeffrey Hebig,Dhiraj Mehra,Larry Arseniadis,Aaron Cleavinger,John Schroeder,Rafeal Reyes,Ryan Olander,Ellen Dutton,Jason McCaherty,Tiffany Tibbot
+Power Tie Giveaway In A Box,B2C Physical Products,102,11,11,0,Eric Wiechart,Larry Arseniadis,Rafeal Reyes,Dhiraj Mehra,Kerry McNeilly,Mieczyslaw Jodziewicz,Ellen Dutton,Daniel Morden,John Schroeder,Rudy Reyes Jr.,Julie Moylan
+ShoreUp,B2C Physical Products,106,11,11,0,Rafeal Reyes,John Schroeder,Rudy Reyes Jr.,Ellen Dutton,William Harlan,Brian Cho,Steve Roe,Jeffrey Hebig,Mieczyslaw Jodziewicz,Khoa Huynh,Tiffany Tibbot
+Tangler Wrangler,B2C Physical Products,110,11,11,0,Larry Arseniadis,Amy Buchan Siegfried,Tiffany Tibbot,Eric Wiechart,Mieczyslaw Jodziewicz,Joseph Anderson,Emily Stoler,Ellen Dutton,Brian Cho,Rudy Reyes Jr.,Julie Moylan
+The Vitalist,B2C Physical Products,112,11,11,0,Khoa Huynh,Eric Wiechart,Julie Moylan,Emily Stoler,Joseph Anderson,Austin Fazio,Jason McCaherty,Amy Buchan Siegfried,Brian Cho,Steve Roe,Rudy Reyes Jr.
+VibeGrips,B2C Physical Products,116,6,6,0,Jason McCaherty,Khoa Huynh,Amy Buchan Siegfried,Austin Fazio,Joseph Anderson,Julie Moylan
+XSEED Properties,B2C Physical Products,118,3,3,0,Austin Fazio,Jason McCaherty,Joseph Anderson
+A Gluten Free Cottage Bakery ,Commerce/Retail,21,11,11,0,Soraya Hernandez,Peter Rienks,Justin Hintz,Julie Rotolo,Thomas Jensen,Nitesh Gudapati,Rudy Reyes Jr.,Jim Davis,Nick Schappler,Tyler Hudson-Crimi,Rita Zinn
+Back in the Bend,Commerce/Retail,23,11,11,0,Joseph Anderson,Joshua Francis,Colin Keeler,Doon Wintz,Steve Asiala,Evan Doney,Ryan Olander,Alyssa Jank,John Gleason,Neil Kane,T. Drew Mitchell
+Bike Basics,Commerce/Retail,24,11,11,0,Aaron Cleavinger,Evan Doney,John Schroeder,Jane Hennessy,Jay Breeden,Adam Sellke,Janet Wolff,Chris Orenchuk,Eric Meyers,Christopher Blum,Thomas Jensen
+Call Me King Shoes,Commerce/Retail,27,11,11,0,Richard Daniels,Peter Flood,Paul Miller,Khoa Huynh,William O'Brien,Jane Hennessy,Amy Buchan Siegfried,Larry Arseniadis,Soraya Hernandez,Joe Mueller,Evan Doney
+Children's Home Infusion Pharmacy,Commerce/Retail,29,11,11,0,Doon Wintz,Kristin Marcuccilli,Adam Sellke,Jim Davis,Christopher Blum,David Brenner,Mike Ferrigno,Patrick Dolan,Evan Doney,Joe Mueller,Austin Fazio
+Chopan - Sourdough Bakery,Commerce/Retail,31,11,11,0,Julie Rotolo,Ryan Olander,Thomas Jensen,David Hemler,Peter Rienks,William O'Brien,Ellen Dutton,Kerry McNeilly,Nitesh Gudapati,Jeffrey Hebig,Sean Murdock
+CoSAL,Commerce/Retail,34,11,11,0,Christopher Blum,BIll Rossiter,Jeffrey Hebig,Tiffany Tibbot,Francis Williams,John Gleason,Ruben Moreno,John Schroeder,Sean Murdock,Andreas Widmer,Janet Wolff
+Desi,Commerce/Retail,37,11,11,0,T. Drew Mitchell,Evan Doney,Andreas Widmer,Jim Davis,Dhiraj Mehra,Aaron Cleavinger,Eric Meyers,Mike Delany,Richard Daniels,Janet Wolff,John Gleason
+Enabler ,Commerce/Retail,41,11,11,0,Andreas Widmer,David Brenner,Malaina Weldy,Peter Rienks,Michael Jennings,Kerry McNeilly,Colin Keeler,Kristin Marcuccilli,Mike Ferrigno,Ryan Olander,Austin Fazio
+Ezza Market ,Commerce/Retail,44,11,11,0,T. Drew Mitchell,Francis Williams,Maria Bailey,Eric Wiechart,William O'Brien,Soraya Hernandez,Ryan Olander,David Hemler,Aaron Cleavinger,Colin Keeler,Scott Noble
+Friends of Notre Dame,Commerce/Retail,48,11,11,0,Jeffrey Heinichen,Mark Jevahirian,Amy Buchan Siegfried,Peter Rienks,Gary Sobolewski,Nick Schappler,David Hemler,Richard Daniels,Tim Kish,Craig Chval,Kerry McNeilly
+Frontier,Commerce/Retail,51,11,11,0,Gary Sobolewski,Steve Asiala,Peter Flood,Kerry McNeilly,Jay Breeden,Nick Schappler,Khoa Huynh,Janet Wolff,Jim Davis,Ellen Dutton,Amy Buchan Siegfried
+G. Grips,Commerce/Retail,54,11,11,0,Gary Sobolewski,Kristin Marcuccilli,Rudy Reyes Jr.,John Gleason,Jay Breeden,Eric Wiechart,Christopher Blum,Shelley Simon,Mark Jevahirian,Janet Wolff,Malaina Weldy
+GreenBaby,Commerce/Retail,58,11,11,0,Aaron Cleavinger,Jeffrey Hebig,Tim O'Neill,Steve Asiala,Shelley Simon,Mike Belatti,Mike Delany,David Hemler,Jeffrey Heinichen,Jason McCaherty,Joseph Anderson
+Jetta’s sweet & salty kettle corn ,Commerce/Retail,65,11,11,0,Khoa Huynh,Mieczyslaw Jodziewicz,Mike Belatti,Justin Hintz,Janet Wolff,Theron Sarda,Nick Schappler,Mike Ferrigno,Jeffrey Heinichen,Chris Orenchuk,Gary Sobolewski
+Junior Changemakers,Commerce/Retail,71,11,11,0,Doon Wintz,Scott Noble,Mike Belatti,Amy Buchan Siegfried,Ed Daniels,Jeffrey Heinichen,Aaron Cleavinger,Ryan Olander,Colin Keeler,Kristin Marcuccilli,Joe Mueller
+Legacy LLC,Commerce/Retail,75,11,11,0,Jeffrey Hebig,Maria Bailey,Theron Sarda,Eric Meyers,Jeffrey Heinichen,Aaron Cleavinger,Larry Arseniadis,Neil Kane,Dhiraj Mehra,Matt VanderGoot,Ed Daniels
+Making the Shift,Commerce/Retail,82,11,11,0,Aaron Cleavinger,John Schroeder,Amy Buchan Siegfried,Doon Wintz,Kerry McNeilly,Richard Daniels,Patrick McMahon,Thomas Jensen,Martin Carrasco,John Gleason,Peter Rienks
+Manning Beverages LLC,Commerce/Retail,97,11,11,0,Mike Belatti,Ryan Olander,Patrick McMahon,John Schroeder,Kerry McNeilly,Martin Carrasco,Maria Bailey,Michael Jennings,Ruben Moreno,Jeffrey Hebig,Mike Delany
+Netic Nails,Commerce/Retail,100,11,11,0,Amy Buchan Siegfried,Jeffrey Hebig,Khoa Huynh,Tiffany Tibbot,Mieczyslaw Jodziewicz,Maria Bailey,Rudy Reyes Jr.,Theron Sarda,Tom Marek,Kerry McNeilly,Ellen Dutton
+Project Shadow Band,Commerce/Retail,103,11,11,0,Tiffany Tibbot,Eric Wiechart,Ryan Olander,Jason McCaherty,Austin Fazio,Michael Jennings,T. Drew Mitchell,Jeffrey Heinichen,Jeffrey Hebig,Kerry McNeilly,Mike Delany
+Resenha/Sambinha Beverage Company,Commerce/Retail,105,11,11,0,Ruben Moreno,Mike Delany,Larry Arseniadis,Neil Kane,Mike Belatti,Khoa Huynh,Tom Marek,Tiffany Tibbot,Andreas Widmer,Doon Wintz,Mieczyslaw Jodziewicz
+Samaritan,Commerce/Retail,111,11,11,0,Mike Belatti,Patrick Dolan,Richard Daniels,Andreas Widmer,Joe Mueller,Ellen Dutton,Joseph Anderson,Rudy Reyes Jr.,Mieczyslaw Jodziewicz,Neil Kane,Khoa Huynh
+SeekSmart,Commerce/Retail,115,11,11,0,Rudy Reyes Jr.,Mike Belatti,Patrick McMahon,Maria Bailey,Aaron Cleavinger,Jason McCaherty,Ruben Moreno,Andreas Widmer,Austin Fazio,T. Drew Mitchell,Eric Wiechart
+Small Animal Coffee House,Commerce/Retail,120,11,11,0,Doon Wintz,Mike Delany,Patrick Dolan,Ruben Moreno,Maria Bailey,Neil Kane,Richard Daniels,Austin Fazio,Tom Marek,Jason McCaherty,Andreas Widmer
+Smart Foods,Commerce/Retail,122,11,11,0,Patrick McMahon,Joseph Anderson,Richard Daniels,Patrick Dolan,Neil Kane,Martin Carrasco,Ruben Moreno,Tom Marek,T. Drew Mitchell,Mike Belatti,Doon Wintz
+"The Wholesome Package, LLC",Commerce/Retail,126,9,9,0,Neil Kane,Jason McCaherty,Doon Wintz,Patrick Dolan,Joseph Anderson,T. Drew Mitchell,Maria Bailey,Richard Daniels,Joe Mueller
+Venus Kenya Sacco Ltd ,Commerce/Retail,131,6,6,0,Richard Daniels,T. Drew Mitchell,Doon Wintz,Maria Bailey,Joe Mueller,Patrick Dolan
+SpoRx Therapeutics Inc.,Drug Development,117,8,8,0,James Pink,Pat Lemieux,Martin Carrasco,Julie Moylan,Jim Farrington,Paul Coletti,Jim Winkler,Khoa Huynh
+Van Heron Labs,Drug Development,129,5,5,0,James Pink,Jim Winkler,Jim Farrington,Paul Coletti,Pat Lemieux
+Environmentalists for Education (E4E),Energy/Defense/Environmental,104,11,11,0,Raegen Siegfried,Marty Curran,Robert Fulton,Misha Shemyakin,Julie Moylan,John Schroeder,Andreas Widmer,James Pink,Martin Carrasco,Ted Kubala,Mieczyslaw Jodziewicz
+JAM Solar,Energy/Defense/Environmental,109,11,11,0,Mike Belatti,Tom Marek,Benjamin Saydah,Julie Moylan,John Schroeder,Ray Vanek,James Pink,Patrick McMahon,Daniel Morden,Mark Roche,Michael Jennings
+Mens et Manus,Energy/Defense/Environmental,114,11,11,0,Paul Coletti,Marty Curran,Julie Moylan,Robert Fulton,Patrick McMahon,Mike Belatti,Tom Marek,Tom Winter,Neil Kane,Ray Vanek,Emily Stoler
+Phone Panel Plus,Energy/Defense/Environmental,123,11,11,0,Benjamin Saydah,James Pink,Misha Shemyakin,Robert Fulton,Neil Kane,Tom Winter,Martin Carrasco,Paul Coletti,Raegen Siegfried,Marty Curran,Ray Vanek
+Shining Innovation LLC,Energy/Defense/Environmental,127,9,9,0,Raegen Siegfried,Ray Vanek,Robert Fulton,Benjamin Saydah,James Pink,Marty Curran,Paul Coletti,Tom Winter,Neil Kane
+United Workers Government and Organizations News (UWGBO News),Energy/Defense/Environmental,132,6,6,0,Raegen Siegfried,Ray Vanek,Paul Coletti,Robert Fulton,Tom Winter,Marty Curran
+G-Dustbin,Manufacturing/Supply Chain,133,7,7,0,Larry Augustin,Patrick Dolan,Doon Wintz,Maria Bailey,Richard Daniels,Ray Vanek,Marty Curran
+BioMarq,Medical Device/Diagnostics,56,11,11,0,Peter Flood,James Kelly,Martin Carrasco,Tom Marek,Patrick Farran,Marty Curran,Patrick McMahon,Soraya Hernandez,Emily Stoler,Jeffrey Heinichen,Larry Mastrovich
+Duniven Dental - Making Improved Dental Instruments,Medical Device/Diagnostics,62,11,11,0,Larry Mastrovich,Jeffrey Heinichen,Pat Sigmon,Dom Gatto,Paul Coletti,Tom Marek,Brett Belock,James Pink,Craig Chval,Martin Carrasco,Emily Stoler
+HexBR,Medical Device/Diagnostics,96,11,11,0,Dom Gatto,Jason Sloan,Ted Kubala,Jeffrey Heinichen,Jim Winkler,Ruben Moreno,Marty Curran,Patrick McMahon,John Gaither,Pat Lemieux,Jim Farrington
+histoimage,Medical Device/Diagnostics,101,11,11,0,James Kelly,Nicolas Schaettel,Emily Stoler,Ted Kubala,Ruben Moreno,John Gaither,Jim Winkler,Jeffrey Heinichen,John Bevan Annaloro,Tom Marek,Jim Farrington
+iMD Device (Incision Manipulation Deterrent Device),Medical Device/Diagnostics,108,11,11,0,Jason Sloan,Emily Stoler,Eric Wiechart,Marty Curran,James Kelly,Dom Gatto,Jim Farrington,John Bevan Annaloro,Jim Winkler,John Gaither,Martin Carrasco
+Luonnon,Medical Device/Diagnostics,119,11,11,0,James Pink,Pat Lemieux,Dom Gatto,Jim Farrington,Jason Sloan,Paul Coletti,Tom Marek,James Kelly,Ruben Moreno,Larry Mastrovich,Patrick McMahon
+NeuroBell,Medical Device/Diagnostics,125,11,11,0,Pat Lemieux,Martin Carrasco,Jim Farrington,Jim Winkler,John Bevan Annaloro,Jason Sloan,Patrick McMahon,Ruben Moreno,James Kelly,Larry Mastrovich,James Pink
+sensitv,Medical Device/Diagnostics,130,11,11,0,Pat Lemieux,Jason Sloan,John Bevan Annaloro,Paul Coletti,Larry Mastrovich,Marty Curran,Jim Farrington,James Kelly,Nicolas Schaettel,Jim Winkler,Dom Gatto
+thecarelink,Medical Device/Diagnostics,134,9,9,0,Jim Farrington,Jim Winkler,John Bevan Annaloro,James Kelly,Larry Mastrovich,Jason Sloan,Pat Lemieux,Nicolas Schaettel,Dom Gatto

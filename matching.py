@@ -129,8 +129,8 @@ def match_judges(judges={}, companies={}, max_judge_companies=10):
     # loop through all companies again and add filler judges
 
     # return the data
-    return_judge_list = [[judge_name, judge_value["categories"], judge_value["companies"], judge_value["companies_with_reasoning"]] for judge_name, judge_value in return_judges.items()]
-    return_company_list = [[company_name, companies[company_name], company_value["queue_number"], company_value["queue_number_with_reasoning"], company_value["judges"], company_value["judges_with_reasoning"]] for company_name, company_value in return_companies.items()]
+    return_judge_list = [[judge_name, judge_value["categories"], judge_value["num_companies"], judge_value["num_matching_companies"], judge_value["num_fill_in_companies"], judge_value["companies"], judge_value["companies_with_reasoning"]] for judge_name, judge_value in return_judges.items()]
+    return_company_list = [[company_name, companies[company_name], company_value["queue_number"], company_value["num_judges"], company_value["num_matching_judges"], company_value["num_fill_in_judges"], company_value["queue_number_with_reasoning"], company_value["judges"], company_value["judges_with_reasoning"]] for company_name, company_value in return_companies.items()]
     return return_judge_list, return_company_list, int(min_judges)
             
     

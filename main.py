@@ -43,11 +43,11 @@ companies_file_name="csv/output_companies.csv"
 companies__reasoning_file_name="csv/output_companies_reasoning.csv"
 
 # write to files
-header1 = ["Judge Name", "Categories"]
+header1 = ["Judge Name", "Categories", "# Companies", "# Matching", "# Fill-In"]
 header1.extend([f'Company {n+1}' for n in range(max_judge_companies + 2)])
 write_judges_to_csv(judge_list, header1, judges_file_name)
 write_judges_reasoning_to_csv(judge_list, header1, judges_reasoning_file_name)
-header2 = ["Company", "Category", "Queue Number"]
+header2 = ["Company", "Category", "Queue Number", "# Judges", "# Matching", "# Fill-In"]
 header2.extend([f'Judge {n+1}' for n in range(min_company_judges + 2)])
 write_companies_to_csv(company_list, header2, companies_file_name)
 write_companies_reasoning_to_csv(company_list, header2, companies__reasoning_file_name)
