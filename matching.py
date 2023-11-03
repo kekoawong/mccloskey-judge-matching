@@ -35,11 +35,7 @@ def match_judges(judges={}, companies={}, max_judge_companies=10):
     # create categories object
     # of the structure { category: { companies: [], judges: [] }}
     categories = {}
-    # add companies
-    for company_name, comp_category in companies.items():
-        if comp_category not in categories:
-            categories[comp_category] = { "companies": [], "judges": [] }
-        categories[comp_category]["companies"].append(company_name)
+
     # add judges
     for judge, judge_categories in judges.items():
         for judge_category in judge_categories:
@@ -92,40 +88,49 @@ def match_judges(judges={}, companies={}, max_judge_companies=10):
 
     # loop through each judge iteration
     for n in range(min_judges):
-        break
+        # add companies to categories
+        for company_name, comp_category in companies.items():
+            if comp_category not in categories:
+                categories[comp_category] = { "companies": [], "judges": [] }
+            categories[comp_category]["companies"].append(company_name)
+        
+        # loop through and add a judge to each company
+        remaining_companies = len(companies.keys())
+        while remaining_companies > 0:
+            # get next category and company
+            target_category = get_next_category(categories=categories)
+            target_company = categories[target_category]["companies"].pop(0)
 
-    # loop through and add the judges to each company
-    remaining_companies = len(companies.keys())
-    while remaining_companies > 0:
-        # get next category and company
-        next_category = get_next_category(categories=categories)
-        next_company = categories[next_category]["companies"].pop(0)
+            # add the values to the dictionary
+            queue_num = len(companies.keys()) - remaining_companies
+            queue_num_with_reasoning = f'{queue_num} since {len(categories[target_category]["companies"]) + 1} {target_category} companies and {len(categories[target_category]["judges"])} available judges'
 
-        # add the values to the dictionary
-        queue_num = len(companies.keys()) - remaining_companies
-        queue_num_with_reasoning = f'{queue_num} since {len(categories[next_category]["companies"]) + 1} {next_category} companies and {len(categories[next_category]["judges"])} available judges'
+            # assign variables for judge loop
+            judges_shuffled = list(random.sample(list(judges.keys()), len(judges)))
+            num_extra_judges_needed = min_judges - len(categories[target_category]["judges"])
 
-        # assign variables for judge loop
-        judges_shuffled = list(random.sample(list(judges.keys()), len(judges)))
-        num_extra_judges_needed = min_judges - len(categories[next_category]["judges"])
+            # match the judge that has the lowest number of categories and contains the category
+            judge_name = min((name for name, categories in judges.items() if target_category in categories), key=lambda name: len(judges[name])) if any(target_category in categories for categories in judges.values()) else None
+            if judge_name:
+                add_judge_to_company(judge, target_company, True)
 
-        # loop through judges
-        for judge in judges_shuffled:
-            # if the judge is available and has the category, assign to company
-            if judge in judges and next_category in judges[judge]:
-                add_judge_to_company(judge, next_company, True)
-            # if judge is available and company needs a random judge, assign to company
-            # elif judge in judges and num_extra_judges_needed > 0:
-            #     add_judge_to_company(judge, next_company, False)
-            #     num_extra_judges_needed -= 1
+            # loop through judges
+            # for judge in judges_shuffled:
+            #     # if the judge is available and has the category, assign to company
+            #     if judge in judges and target_category in judges[judge]:
+            #         add_judge_to_company(judge, target_company, True)
+            #     # if judge is available and company needs a random judge, assign to company
+            #     # elif judge in judges and num_extra_judges_needed > 0:
+            #     #     add_judge_to_company(judge, target_company, False)
+            #     #     num_extra_judges_needed -= 1
 
-            # break from loop if num judges met
-            if next_company in return_companies and len(return_companies[next_company]["judges"]) >= min_judges:
-                break
+            #     # break from loop if num judges met
+            #     if target_company in return_companies and len(return_companies[target_company]["judges"]) >= min_judges:
+            #         break
 
-        # set values in dictionary
-        return_companies[next_company]["queue_number"] = queue_num
-        return_companies[next_company]["queue_number_with_reasoning"] = queue_num_with_reasoning
+            # set values in dictionary
+            return_companies[target_company]["queue_number"] = queue_num
+            return_companies[target_company]["queue_number_with_reasoning"] = queue_num_with_reasoning
 
         # decrement remaining companies
         remaining_companies -= 1
