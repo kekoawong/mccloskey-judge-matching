@@ -24,8 +24,8 @@ def match_judges(judges={}, companies={}, max_judge_companies=10):
         companies = { company_name: company_category } \n
         categories = { category: { num_companies: number; num_judges: number; } } \n
     Will output the following list of lists. \n
-    Judge List: [judge_name, [categories], [companies], [companies-with-reasoning]] \n
-    Company List: [company_name, category, queue_number, queue_number_with_reasoning, [judges], [judges-with-reasoning]]
+    Judge List: [judge_name, [categories], num_companies, num_matching_companies, num_fill_in_companies, [companies], [companies-with-reasoning]] \n
+    Company List: [company_name, category, queue_number, num_judges, num_matching_judges, num_fill_in_judges, queue_number_with_reasoning, [judges], [judges-with-reasoning]]
     '''
     # set constraints
     total_judges = len(judges.keys())
@@ -58,15 +58,27 @@ def match_judges(judges={}, companies={}, max_judge_companies=10):
         '''
         # add company to judge database
         if judge not in return_judges:
-            return_judges[judge] = { "companies": [], "companies_with_reasoning": [], "categories": judges[judge] }
+            return_judges[judge] = { "companies": [], "companies_with_reasoning": [], "categories": judges[judge], "num_companies": 0, "num_matching_companies": 0, "num_fill_in_companies": 0 }
         return_judges[judge]["companies"].append(f'{company if within_category else company + " - Fill-in"}')
-        return_judges[judge]["companies_with_reasoning"].append(f'{company} - {next_category if within_category else " - Fill-in"}.')
+        return_judges[judge]["companies_with_reasoning"].append(f'{company} - {next_category if within_category else "Fill-in"}.')
+        return_judges[judge]["num_companies"] += 1
+        # increment matching companies
+        if within_category:
+            return_judges[judge]["num_matching_companies"] +=1 
+        else:
+            return_judges[judge]["num_fill_in_companies"] +=1
         
         # add judge to company database
         if company not in return_companies:
-            return_companies[company] = { "queue_number": 0, "queue_number_with_reasoning": "", "judges": [], "judges_with_reasoning": [] }
+            return_companies[company] = { "queue_number": 0, "queue_number_with_reasoning": "", "judges": [], "judges_with_reasoning": [], "num_judges": 0, "num_matching_judges": 0, "num_fill_in_judges": 0 }
         return_companies[company]["judges"].append(f'{judge if within_category else judge + " - Fill-in"}')
-        return_companies[company]["judges_with_reasoning"].append(f'{judge} - {next_category if within_category else " - Fill-in"}. All interests are {", ".join(judges[judge])}')
+        return_companies[company]["judges_with_reasoning"].append(f'{judge} - {next_category if within_category else "Fill-in"}. All interests are {", ".join(judges[judge])}')
+        return_companies[company]["num_judges"] += 1
+        # increment matching companies
+        if within_category:
+            return_companies[company]["num_matching_judges"] +=1 
+        else:
+            return_companies[company]["num_fill_in_judges"] +=1
 
         # remove judge from being available if hits max number
         if len(return_judges[judge]["companies"]) >= max_judge_companies:
@@ -85,6 +97,10 @@ def match_judges(judges={}, companies={}, max_judge_companies=10):
         next_category = get_next_category(categories=categories)
         next_company = categories[next_category]["companies"].pop(0)
 
+        # add the values to the dictionary
+        queue_num = len(companies.keys()) - remaining_companies
+        queue_num_with_reasoning = f'{queue_num} since {len(categories[next_category]["companies"]) + 1} {next_category} companies and {len(categories[next_category]["judges"])} available judges'
+
         # assign variables for judge loop
         judges_shuffled = list(random.sample(list(judges.keys()), len(judges)))
         num_extra_judges_needed = min_judges - len(categories[next_category]["judges"])
@@ -95,20 +111,22 @@ def match_judges(judges={}, companies={}, max_judge_companies=10):
             if judge in judges and next_category in judges[judge]:
                 add_judge_to_company(judge, next_company, True)
             # if judge is available and company needs a random judge, assign to company
-            elif judge in judges and num_extra_judges_needed > 0:
-                add_judge_to_company(judge, next_company, False)
+            # elif judge in judges and num_extra_judges_needed > 0:
+            #     add_judge_to_company(judge, next_company, False)
+            #     num_extra_judges_needed -= 1
 
             # break from loop if num judges met
             if next_company in return_companies and len(return_companies[next_company]["judges"]) >= min_judges:
                 break
 
-        # add the values to the dictionary
-        queue_num = len(companies.keys()) - remaining_companies
+        # set values in dictionary
         return_companies[next_company]["queue_number"] = queue_num
-        return_companies[next_company]["queue_number_with_reasoning"] = f'{queue_num} since {len(categories[next_category]["companies"])} {next_category} companies and {len(categories[next_category]["judges"])} available judges'
+        return_companies[next_company]["queue_number_with_reasoning"] = queue_num_with_reasoning
 
         # decrement remaining companies
         remaining_companies -= 1
+
+    # loop through all companies again and add filler judges
 
     # return the data
     return_judge_list = [[judge_name, judge_value["categories"], judge_value["companies"], judge_value["companies_with_reasoning"]] for judge_name, judge_value in return_judges.items()]
