@@ -29,7 +29,7 @@ To run the scripts:
 2. Run `main.py` with the CSV files:
 
    ```bash
-   python main.py -j csv/sample_judges.csv -c csv/sample_companies.csv -n 10
+   python3 main.py -j csv/sample_judges.csv -c csv/sample_companies.csv -n 10
    ```
    
 3. The output CSV files will be created in the `csv` folder:
