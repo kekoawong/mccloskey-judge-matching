@@ -47,7 +47,7 @@ def match_judges(judges={}, companies={}, max_judge_companies=10):
     return_companies = {}
 
     # define adding a judge to a company
-    def add_judge_to_company(judge, company, within_category=True):
+    def add_judge_to_company(judge, company, company_category, within_category):
         '''
         Function will add the judge to the company
         '''
@@ -55,7 +55,7 @@ def match_judges(judges={}, companies={}, max_judge_companies=10):
         if judge not in return_judges:
             return_judges[judge] = { "companies": [], "companies_with_reasoning": [], "categories": judges[judge], "num_companies": 0, "num_matching_companies": 0, "num_fill_in_companies": 0 }
         return_judges[judge]["companies"].append(f'{company if within_category else company + " - Fill-in"}')
-        return_judges[judge]["companies_with_reasoning"].append(f'{company} - {target_category if within_category else "Fill-in"}.')
+        return_judges[judge]["companies_with_reasoning"].append(f'{company} - {company_category if within_category else "Fill-in"}.')
         return_judges[judge]["num_companies"] += 1
         # increment matching companies
         if within_category:
@@ -67,7 +67,7 @@ def match_judges(judges={}, companies={}, max_judge_companies=10):
         if company not in return_companies:
             return_companies[company] = { "queue_number": 0, "queue_number_with_reasoning": "", "judges": [], "judges_with_reasoning": [], "num_judges": 0, "num_matching_judges": 0, "num_fill_in_judges": 0 }
         return_companies[company]["judges"].append(f'{judge if within_category else judge + " - Fill-in"}')
-        return_companies[company]["judges_with_reasoning"].append(f'{judge} - {target_category if within_category else "Fill-in"}. All interests are {", ".join(return_judges[judge]["categories"])}')
+        return_companies[company]["judges_with_reasoning"].append(f'{judge} - {company_category if within_category else "Fill-in"}. All interests are {", ".join(return_judges[judge]["categories"])}')
         return_companies[company]["num_judges"] += 1
         # increment matching companies
         if within_category:
@@ -117,9 +117,10 @@ def match_judges(judges={}, companies={}, max_judge_companies=10):
             # add judge if it is not currently in the list
             company_judges = [] if target_company not in return_companies else return_companies[target_company]["judges"]
             judge_name = next((judge_n for judge_n in sorted_available_judges if judge_n not in company_judges), None)
+
             # judge_name = min((name for name, categories in judges.items() if target_category in categories), key=lambda name: len(judges[name])) if any(target_category in categories for categories in judges.values()) else None
             if judge_name:
-                add_judge_to_company(judge_name, target_company, True)
+                add_judge_to_company(judge_name, target_company, target_category, True)
 
             # set values in dictionary
             return_companies[target_company]["queue_number"] = queue_num
@@ -146,7 +147,11 @@ def match_judges(judges={}, companies={}, max_judge_companies=10):
         # loop through companies and assign judges if there is an overlap, and they are not in the judges already
         for comp in filtered_and_sorted_companies:
             if companies[comp] in judges[underused_judge] and underused_judge not in return_companies[comp]["judges"]:
-                add_judge_to_company(underused_judge, comp, True)
+                add_judge_to_company(underused_judge, comp, companies[comp], True)
+                # if underused_judge == "Justin Obletz":
+                #     print(f"Company assiged to Justin: {comp} with category {companies[comp]}")
+                # print(f'Is companies[comp] ({companies[comp]}) in judges[underused_judge] ({judges[underused_judge]}): {companies[comp] in judges[underused_judge]}')
+                # print(f'{comp}: {return_companies[comp]["judges"]}')
             # break if the judge has more than the necessary amount of companies
             if underused_judge in return_judges and return_judges[underused_judge]["num_companies"] >= max_judge_companies:
                 break
@@ -156,7 +161,7 @@ def match_judges(judges={}, companies={}, max_judge_companies=10):
         (judge_n for judge_n in judges.keys()),
         key=lambda j: len(judges[j])
     )
-    # assign the judges just by if htey are not in there
+    # assign the judges just by if they are not in there
     unmatched_spots = 0
     for underused_judge in filtered_and_sorted_judges:
         # filter and sort the companies
@@ -168,8 +173,9 @@ def match_judges(judges={}, companies={}, max_judge_companies=10):
         # loop through companies and assign judges if they are not in the judges already
         for comp in filtered_and_sorted_companies:
             if underused_judge not in return_companies[comp]["judges"]:
-                add_judge_to_company(underused_judge, comp, False)
+                add_judge_to_company(underused_judge, comp, companies[comp], False)
                 unmatched_spots += 1
+                # print(f'{comp}: {return_companies[comp]["judges"]}')
             # break if the judge has more than the necessary amount of companies
             if underused_judge in return_judges and return_judges[underused_judge]["num_companies"] >= max_judge_companies:
                 break
